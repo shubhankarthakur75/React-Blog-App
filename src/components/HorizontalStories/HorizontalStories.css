@@ -1,0 +1,36 @@
+.horizontal-stories {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+.horizontal-stories .horizontal-stories-title h2 {
+  display: inline-block;
+  font-size: 30px;
+  color: #000000;
+  font-weight: 500;
+  border-bottom: 3px solid #f08080;
+}
+.horizontal-stories .stories-container {
+  width: 100%;
+  border-top: 3px solid #f0f0f0;
+  border-bottom: 3px solid #f0f0f0;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.horizontal-stories .expand-btn button {
+  border: none;
+  background-color: #ffffff;
+  padding-left: 0px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.horizontal-stories .expand-btn span {
+  color: #a2a2a2;
+  font-size: 16px;
+  margin-right: 10px;
+}

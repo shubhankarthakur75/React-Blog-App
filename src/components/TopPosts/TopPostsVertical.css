@@ -1,0 +1,23 @@
+.top-posts-vertical {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.top-posts-vertical .top-posts-title {
+  display: inline-block;
+  font-size: 30px;
+  color: #000000;
+  font-weight: 500;
+  border-bottom: 3px solid #f08080;
+}
+.top-posts-vertical .top-posts-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.top-posts-vertical .post-container {
+  border-bottom: 3px solid #f0f0f0;
+}
+.top-posts-vertical .post-container:last-child {
+  border-bottom: none;
+}

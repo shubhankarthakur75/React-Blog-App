@@ -1,0 +1,13 @@
+.navbar {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0px 10px 0px;
+}
+.navbar li {
+  list-style-type: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: #000000;
+}

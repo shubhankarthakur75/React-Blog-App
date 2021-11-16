@@ -1,0 +1,25 @@
+.horizontal-articles {
+  width: 80%;
+  margin: 80px auto 40px auto;
+  text-align: left;
+}
+
+.horizontal-articles .horizontal-articles-title {
+  display: inline-block;
+  font-size: 30px;
+  color: #000000;
+  font-weight: 500;
+  border-bottom: 3px solid #f08080;
+  margin: 15px;
+  padding: 10px 0px;
+}
+
+.horizontal-articles .horizontal-articles-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.horizontal-articles .article-container {
+  width: 31%;
+}

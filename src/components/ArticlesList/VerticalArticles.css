@@ -1,0 +1,41 @@
+.vertical-articles {
+  width: 68%;
+  margin: 50px auto;
+  text-align: left;
+}
+
+.vertical-articles .vertical-articles-title {
+  display: inline-block;
+  font-size: 30px;
+  color: #000000;
+  font-weight: 500;
+  border-bottom: 3px solid #f08080;
+  margin: 15px 0px;
+  padding: 10px 0px;
+}
+
+.vertical-articles .vertical-articles-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.vertical-articles .article-container {
+  width: 90%;
+  margin: 10px 0px;
+  padding: 20px 0px;
+  border-top: 3px solid #f0f0f0;
+}
+
+.vertical-articles .expand-btn button {
+  border: none;
+  background-color: #ffffff;
+  padding-left: 0px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.vertical-articles .expand-btn span {
+  color: #a2a2a2;
+  font-size: 16px;
+  margin-left: 5px;
+}

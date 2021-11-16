@@ -1,0 +1,33 @@
+.story {
+  width: 33%;
+  border-right: 3px solid #f0f0f0;
+  padding: 0px 20px;
+}
+.story:last-child {
+  border-right: none;
+}
+.story .story-title {
+  font-size: 28px;
+  color: #000000;
+  font-weight: 500;
+}
+.story .story-desc {
+  font-size: 15px;
+  color: #908d8d;
+  margin: 10px 0px;
+}
+.story .story-category-and-date {
+  margin: 30px 0px;
+}
+.story .story-category {
+  font-size: 14px;
+  color: #404040;
+  font-weight: 700;
+  padding-right: 5 px;
+}
+.story .story-date {
+  font-size: 14px;
+  color: #404040;
+  opacity: 0.7;
+  padding-left: 5px;
+}
