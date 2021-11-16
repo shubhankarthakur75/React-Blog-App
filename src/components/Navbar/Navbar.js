@@ -1,16 +1,29 @@
 import React, { Component } from "react";
 import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
     return (
       <div className="navbar">
-        <li>Home</li>
-        <li>Bollywood</li>
-        <li>Hollywood</li>
-        <li>Technology</li>
-        <li>Fitness</li>
-        <li>Food</li>
+        <NavLink exact to="/">
+          <li>Home</li>
+        </NavLink>
+        <NavLink to="/bollywood">
+          <li>Bollywood</li>
+        </NavLink>
+        <NavLink to="/hollywood">
+          <li>Hollywood</li>
+        </NavLink>
+        <NavLink to="/technology">
+          <li>Technology</li>
+        </NavLink>
+        <NavLink to="/fitness">
+          <li>Fitness</li>
+        </NavLink>
+        <NavLink to="/food">
+          <li>Food</li>
+        </NavLink>
       </div>
     );
   }

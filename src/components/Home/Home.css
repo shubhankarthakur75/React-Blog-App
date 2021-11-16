@@ -5,3 +5,10 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+.home .flex-row .left-box {
+  width: 68%;
+}
+.home .flex-row .right-box {
+  width: 32%;
+}

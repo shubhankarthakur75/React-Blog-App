@@ -1,8 +1,4 @@
-.sidebar {
-  width: 32%;
-}
-
-.sidebar .ad-container {
+.advertisement {
   width: 100%;
   height: 780px;
   margin-top: 150px;
@@ -11,7 +7,7 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
-.sidebar .ad-container p {
+.advertisement p {
   font-size: 30px;
   color: #000000;
   font-weight: 500;

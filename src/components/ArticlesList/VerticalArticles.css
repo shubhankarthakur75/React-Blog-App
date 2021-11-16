@@ -1,5 +1,6 @@
 .vertical-articles {
-  width: 68%;
+  /* width: 68%; */
+  width: 100%;
   margin: 50px auto;
   text-align: left;
 }

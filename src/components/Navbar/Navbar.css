@@ -11,3 +11,11 @@
   font-weight: 500;
   color: #000000;
 }
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar .active li {
+  color: #f08080;
+}
