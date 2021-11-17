@@ -5,10 +5,32 @@ import downwardArrow from "../../assets/images/downward-arrow.svg";
 import { Link } from "react-router-dom";
 
 class VerticalArticles extends Component {
+  state = {
+    noOfVerticalArticlesToBeDisplayed: this.props.propsNoOfArticles,
+  };
+
+  componentDidUpdate(prevProps) {
+    if (this.props.propsCategoryName !== prevProps.propsCategoryName) {
+      this.setState({
+        noOfVerticalArticlesToBeDisplayed: this.props.propsNoOfArticles,
+      });
+    }
+  }
+  loadMoreHandler = (n) => {
+    this.setState((prevState) => {
+      return {
+        noOfVerticalArticlesToBeDisplayed:
+          prevState.noOfVerticalArticlesToBeDisplayed + 4,
+      };
+    });
+  };
+
   render() {
-    const [...blogsArr] = this.props.propsBlogs;
-    let noOfVerticalArticlesToBeDisplayed = this.props.propsNoOfArticles;
-    const blogs = blogsArr.slice(0, noOfVerticalArticlesToBeDisplayed);
+    const [...blogsArr] = this.props.propsBlogsArr;
+    const blogs = blogsArr.slice(
+      0,
+      this.state.noOfVerticalArticlesToBeDisplayed
+    );
 
     return (
       <div className="vertical-articles">
@@ -31,7 +53,7 @@ class VerticalArticles extends Component {
           })}
 
           <div className="expand-btn">
-            <button>
+            <button onClick={this.loadMoreHandler}>
               <img src={downwardArrow} alt="downward-arrow" />
               <span>LOAD MORE</span>
             </button>

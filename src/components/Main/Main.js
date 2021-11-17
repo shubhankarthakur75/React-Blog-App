@@ -19,53 +19,6 @@ class Main extends Component {
           author: "User",
         },
         {
-          id: "hollywood1",
-          name: "hollywood1",
-          category: "hollywood",
-          dateOfPublishment: "14/11/2021",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
-        },
-        {
-          id: "technology1",
-          name: "technology1",
-          category: "Technology",
-          dateOfPublishment: "14/11/2021",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
-        },
-        {
-          id: "fitness1",
-          name: "fitness1",
-          category: "Fitness",
-          dateOfPublishment: "14/11/2021",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
-        },
-        {
-          id: "food1",
-          name: "food1",
-          category: "Food",
-          dateOfPublishment: "14/11/2021",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
-        },
-      ],
-      bollywoodBlogsArr: [
-        {
-          id: "bollywood1",
-          name: "bollywood1",
-          category: "Bollywood",
-          dateOfPublishment: "14/11/2021",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
-        },
-        {
           id: "bollywood2",
           name: "bollywood2",
           category: "Bollywood",
@@ -119,64 +72,9 @@ class Main extends Component {
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
           author: "User",
         },
-      ],
-      hollywoodBlogsArr: [
+
         {
           id: "hollywood1",
-          name: "hollywood1",
-          category: "hollywood",
-          dateOfPublishment: "14/11/2021",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
-        },
-        {
-          id: "hollywood2",
-          name: "hollywood2",
-          category: "hollywood",
-          dateOfPublishment: "14/11/2021",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
-        },
-        {
-          id: "hollywood3",
-          name: "hollywood3",
-          category: "hollywood",
-          dateOfPublishment: "14/11/2021",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
-        },
-        {
-          id: "hollywood4",
-          name: "hollywood4",
-          category: "hollywood",
-          dateOfPublishment: "14/11/2021",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
-        },
-        {
-          id: "hollywood5",
-          name: "hollywood5",
-          category: "hollywood",
-          dateOfPublishment: "14/11/2021",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
-        },
-        {
-          id: "hollywood6",
-          name: "hollywood6",
-          category: "hollywood",
-          dateOfPublishment: "14/11/2021",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
-        },
-        {
-          id: "hollywood7",
           name: "hollywood7",
           category: "hollywood",
           dateOfPublishment: "14/11/2021",
@@ -184,8 +82,7 @@ class Main extends Component {
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
           author: "User",
         },
-      ],
-      technologyBlogsArr: [
+
         {
           id: "technology1",
           name: "technology1",
@@ -258,8 +155,7 @@ class Main extends Component {
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
           author: "User",
         },
-      ],
-      fitnessBlogsArr: [
+
         {
           id: "fitness1",
           name: "fitness1",
@@ -296,6 +192,7 @@ class Main extends Component {
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
           author: "User",
         },
+
         {
           id: "fitness5",
           name: "fitness5",
@@ -305,8 +202,7 @@ class Main extends Component {
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
           author: "User",
         },
-      ],
-      foodBlogsArr: [
+
         {
           id: "food1",
           name: "food1",
@@ -347,31 +243,34 @@ class Main extends Component {
           <Route exact path="/bollywood">
             <Category
               propsCategoryName="Bollywood"
-              propsBlogsArr={this.state.blogs.bollywoodBlogsArr}
+              propsBlogsArr={this.state.blogs.blogsArr}
             />
           </Route>
-          <Route exact path="/technology">
-            <Category
-              propsCategoryName="Technology"
-              propsBlogsArr={this.state.blogs.technologyBlogsArr}
-            />
-          </Route>
+
           <Route exact path="/hollywood">
             <Category
               propsCategoryName="Hollywood"
-              propsBlogsArr={this.state.blogs.hollywoodBlogsArr}
+              propsBlogsArr={this.state.blogs.blogsArr}
             />
           </Route>
+
+          <Route exact path="/technology">
+            <Category
+              propsCategoryName="Technology"
+              propsBlogsArr={this.state.blogs.blogsArr}
+            />
+          </Route>
+
           <Route exact path="/fitness">
             <Category
               propsCategoryName="Fitness"
-              propsBlogsArr={this.state.blogs.fitnessBlogsArr}
+              propsBlogsArr={this.state.blogs.blogsArr}
             />
           </Route>
           <Route exact path="/food">
             <Category
               propsCategoryName="Food"
-              propsBlogsArr={this.state.blogs.foodBlogsArr}
+              propsBlogsArr={this.state.blogs.blogsArr}
             />
           </Route>
           <Route exact path="/:id">

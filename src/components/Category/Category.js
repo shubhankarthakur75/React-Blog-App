@@ -6,19 +6,15 @@ import TopPostsVertical from "../TopPosts/TopPostsVertical";
 import Advertisement from "../Advertisement/Advertisement";
 
 export class Category extends Component {
-  state = {
-    noOfVerticalArticlesToBeDisplayed: 5,
-  };
   render() {
     const [...blogs] = this.props.propsBlogsArr;
-    console.log(blogs);
-    console.log(this.props.propsCategoryName);
 
-    // test-
-    const filteredArr = blogs.filter((blog) => {
-      return blog.category == this.props.propsCategoryName;
+    const filteredCategoryArr = blogs.filter((blog) => {
+      return (
+        blog.category.toLowerCase() ==
+        this.props.propsCategoryName.toLowerCase()
+      );
     });
-    console.log(filteredArr);
 
     return (
       <div className="category">
@@ -27,8 +23,8 @@ export class Category extends Component {
           <div className="left-box">
             <VerticalArticles
               propsCategoryName={this.props.propsCategoryName}
-              propsBlogs={blogs}
-              propsNoOfArticles={this.state.noOfVerticalArticlesToBeDisplayed}
+              propsBlogsArr={filteredCategoryArr}
+              propsNoOfArticles={5}
             />
           </div>
           <div className="right-box">

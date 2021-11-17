@@ -10,9 +10,9 @@ import TopPostsVertical from "../TopPosts/TopPostsVertical";
 import HorizontalStories from "../HorizontalStories/HorizontalStories";
 
 class Home extends Component {
-  state = {
-    noOfVerticalArticlesToBeDisplayed: 4,
-  };
+  // state = {
+  //   noOfVerticalArticlesToBeDisplayed: 4,
+  // };
 
   render() {
     const [...blogs] = this.props.propsBlogsArr;
@@ -25,8 +25,8 @@ class Home extends Component {
           <div className="left-box">
             <VerticalArticles
               propsCategoryName="Latest Articles"
-              propsBlogs={blogs}
-              propsNoOfArticles={this.state.noOfVerticalArticlesToBeDisplayed}
+              propsBlogsArr={blogs}
+              propsNoOfArticles={4}
             />
             <Gallery />
           </div>
@@ -35,7 +35,7 @@ class Home extends Component {
             <TopPostsVertical />
           </div>
         </div>
-        <HorizontalStories propsBlogs={blogs.slice(0, 3)} />
+        <HorizontalStories propsBlogsArr={blogs} />
 
         {/* <Category /> */}
       </div>
