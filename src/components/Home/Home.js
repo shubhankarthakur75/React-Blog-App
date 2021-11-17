@@ -9,21 +9,24 @@ import Advertisement from "../Advertisement/Advertisement";
 import TopPostsVertical from "../TopPosts/TopPostsVertical";
 import HorizontalStories from "../HorizontalStories/HorizontalStories";
 
-// import Category from "../Category/Category";
-
 class Home extends Component {
+  state = {
+    noOfVerticalArticlesToBeDisplayed: 4,
+  };
+
   render() {
     const [...blogs] = this.props.propsBlogsArr;
     return (
       <div className="home">
         <Header />
         <ImagesShowcase />
-        <HorizontalArticles />
+        <HorizontalArticles propsBlogs={blogs.slice(0, 3)} />
         <div className="flex-row">
           <div className="left-box">
             <VerticalArticles
               propsCategoryName="Latest Articles"
               propsBlogs={blogs}
+              propsNoOfArticles={this.state.noOfVerticalArticlesToBeDisplayed}
             />
             <Gallery />
           </div>
@@ -32,7 +35,7 @@ class Home extends Component {
             <TopPostsVertical />
           </div>
         </div>
-        <HorizontalStories />
+        <HorizontalStories propsBlogs={blogs.slice(0, 3)} />
 
         {/* <Category /> */}
       </div>

@@ -3,88 +3,336 @@ import "./Main.css";
 import { Switch, Route } from "react-router-dom";
 import Home from "../Home/Home";
 import Category from "../Category/Category";
+import ReadBlog from "../ReadBlog/ReadBlog";
 
 class Main extends Component {
   state = {
     blogs: {
       blogsArr: [
         {
-          id: 1,
-          name: "blog1",
+          id: "bollywood1",
+          name: "bollywood1",
           category: "Bollywood",
           dateOfPublishment: "14/11/2021",
-          author: "User1",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
         },
         {
-          id: 3,
-          name: "blog3",
+          id: "hollywood1",
+          name: "hollywood1",
+          category: "hollywood",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "technology1",
+          name: "technology1",
           category: "Technology",
-          dateOfPublishment: "10/11/2021",
-          author: "User3",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "fitness1",
+          name: "fitness1",
+          category: "Fitness",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "food1",
+          name: "food1",
+          category: "Food",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
         },
       ],
       bollywoodBlogsArr: [
         {
-          id: 1,
-          name: "blog1",
+          id: "bollywood1",
+          name: "bollywood1",
           category: "Bollywood",
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User1",
+          author: "User",
+        },
+        {
+          id: "bollywood2",
+          name: "bollywood2",
+          category: "Bollywood",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "bollywood3",
+          name: "bollywood3",
+          category: "Bollywood",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "bollywood4",
+          name: "bollywood4",
+          category: "Bollywood",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "bollywood5",
+          name: "bollywood5",
+          category: "Bollywood",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "bollywood6",
+          name: "bollywood6",
+          category: "Bollywood",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "bollywood7",
+          name: "bollywood7",
+          category: "Bollywood",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
         },
       ],
       hollywoodBlogsArr: [
         {
-          id: 2,
-          name: "blog2",
+          id: "hollywood1",
+          name: "hollywood1",
           category: "hollywood",
-          dateOfPublishment: "14/9/2021",
+          dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User2",
+          author: "User",
         },
         {
-          id: 2,
-          name: "blog2",
+          id: "hollywood2",
+          name: "hollywood2",
           category: "hollywood",
-          dateOfPublishment: "14/9/2021",
+          dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User2",
+          author: "User",
+        },
+        {
+          id: "hollywood3",
+          name: "hollywood3",
+          category: "hollywood",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "hollywood4",
+          name: "hollywood4",
+          category: "hollywood",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "hollywood5",
+          name: "hollywood5",
+          category: "hollywood",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "hollywood6",
+          name: "hollywood6",
+          category: "hollywood",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "hollywood7",
+          name: "hollywood7",
+          category: "hollywood",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
         },
       ],
       technologyBlogsArr: [
         {
-          id: 3,
-          name: "blog3",
+          id: "technology1",
+          name: "technology1",
           category: "Technology",
-          dateOfPublishment: "10/11/2021",
+          dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User3",
+          author: "User",
+        },
+        {
+          id: "technology2",
+          name: "technology2",
+          category: "Technology",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "technology3",
+          name: "technology3",
+          category: "Technology",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "technology4",
+          name: "technology4",
+          category: "Technology",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "technology5",
+          name: "technology5",
+          category: "Technology",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "technology6",
+          name: "technology6",
+          category: "Technology",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "technology7",
+          name: "technology7",
+          category: "Technology",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "technology8",
+          name: "technology8",
+          category: "Technology",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
         },
       ],
       fitnessBlogsArr: [
         {
-          id: 4,
-          name: "blog4",
+          id: "fitness1",
+          name: "fitness1",
           category: "Fitness",
-          dateOfPublishment: "10/11/2021",
+          dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User4",
+          author: "User",
+        },
+        {
+          id: "fitness2",
+          name: "fitness2",
+          category: "Fitness",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "fitness3",
+          name: "fitness3",
+          category: "Fitness",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "fitness4",
+          name: "fitness4",
+          category: "Fitness",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "fitness5",
+          name: "fitness5",
+          category: "Fitness",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
         },
       ],
       foodBlogsArr: [
         {
-          id: 5,
-          name: "blog5",
+          id: "food1",
+          name: "food1",
           category: "Food",
-          dateOfPublishment: "10/11/2021",
+          dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User5",
+          author: "User",
+        },
+        {
+          id: "food2",
+          name: "food2",
+          category: "Food",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
+        },
+        {
+          id: "food3",
+          name: "food3",
+          category: "Food",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          author: "User",
         },
       ],
     },
@@ -125,6 +373,9 @@ class Main extends Component {
               propsCategoryName="Food"
               propsBlogsArr={this.state.blogs.foodBlogsArr}
             />
+          </Route>
+          <Route exact path="/:id">
+            <ReadBlog />
           </Route>
         </Switch>
       </div>

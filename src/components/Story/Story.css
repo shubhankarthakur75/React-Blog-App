@@ -1,10 +1,6 @@
 .story {
-  width: 33%;
-  border-right: 3px solid #f0f0f0;
+  width: 95%;
   padding: 0px 20px;
-}
-.story:last-child {
-  border-right: none;
 }
 .story .story-title {
   font-size: 28px;

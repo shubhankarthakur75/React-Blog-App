@@ -22,10 +22,14 @@
   justify-content: space-between;
 }
 .vertical-articles .article-container {
-  width: 90%;
+  width: 85%;
   margin: 10px 0px;
   padding: 20px 0px;
   border-top: 3px solid #f0f0f0;
+}
+
+.vertical-articles a {
+  text-decoration: none;
 }
 
 .vertical-articles .expand-btn button {

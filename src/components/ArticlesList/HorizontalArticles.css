@@ -20,6 +20,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+.horizontal-articles .horizontal-articles-container a {
+  text-decoration: none;
+}
+
 .horizontal-articles .article-container {
   width: 31%;
 }

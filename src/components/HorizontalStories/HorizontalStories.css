@@ -1,6 +1,6 @@
 .horizontal-stories {
   width: 80%;
-  margin: auto;
+  margin: 50px auto;
   text-align: left;
 }
 .horizontal-stories .horizontal-stories-title h2 {
@@ -18,8 +18,17 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   padding: 50px 0px;
+}
+
+.horizontal-stories .stories-container:last-child {
+  border-right: none;
+}
+
+.horizontal-stories .story-container {
+  width: 30%;
+  border-right: 3px solid #f0f0f0;
 }
 
 .horizontal-stories .expand-btn button {
