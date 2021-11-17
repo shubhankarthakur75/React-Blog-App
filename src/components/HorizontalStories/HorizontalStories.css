@@ -1,5 +1,5 @@
 .horizontal-stories {
-  width: 80%;
+  width: 75%;
   margin: 50px auto;
   text-align: left;
 }
@@ -20,6 +20,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 50px 0px;
+}
+
+.horizontal-stories .stories-container a {
+  text-decoration: none;
 }
 
 .horizontal-stories .stories-container:last-child {

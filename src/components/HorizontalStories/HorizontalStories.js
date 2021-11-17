@@ -26,11 +26,13 @@ class HorizontalStories extends Component {
             {blogs.map((blog, index) => {
               return (
                 <div className="story-container" key={index}>
-                  <Story
-                    propsBlogName={blog.name}
-                    propsDescription={blog.description}
-                    propsCategory={blog.category}
-                  />
+                  <Link to={`/${blog.id}`}>
+                    <Story
+                      propsBlogName={blog.name}
+                      propsDescription={blog.description}
+                      propsCategory={blog.category}
+                    />
+                  </Link>
                 </div>
               );
             })}
