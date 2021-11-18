@@ -3,7 +3,7 @@ import "./Main.css";
 import { Switch, Route } from "react-router-dom";
 import Home from "../Home/Home";
 import Category from "../Category/Category";
-import ReadBlog from "../ReadBlog/ReadBlog";
+import ReadArticle from "../ReadArticle/ReadArticle";
 
 class Main extends Component {
   state = {
@@ -274,7 +274,7 @@ class Main extends Component {
             />
           </Route>
           <Route exact path="/:id">
-            <ReadBlog />
+            <ReadArticle />
           </Route>
         </Switch>
       </div>

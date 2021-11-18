@@ -1,0 +1,39 @@
+.read-article .box-container {
+  width: 100%;
+  margin: auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* flex-wrap: nowrap; */
+}
+.read-article .left-box {
+  width: 30%;
+  border: 1px solid red;
+}
+.read-article .middle-box {
+  width: 40%;
+  border: 1px solid red;
+}
+.read-article .right-box {
+  width: 30%;
+  border: 1px solid red;
+}
+.read-article .left-box {
+  display: flex;
+  justify-content: center;
+}
+
+.read-article .icons-container {
+  margin-top: 220px;
+}
+.read-article .icons-container .icon-and-details-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 30px;
+}
+.read-article .icon-and-details-container span {
+  text-align: left;
+  margin-right: 10px;
+}
