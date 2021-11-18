@@ -13,6 +13,7 @@ class ReadArticle extends Component {
     const filteredBlogsArr = blogs.filter((blog) => {
       return blog.id === this.props.match.params.id;
     });
+    let blogId = this.props.match.params.id;
     let filteredBlog = filteredBlogsArr[0];
 
     return (
@@ -41,7 +42,10 @@ class ReadArticle extends Component {
           <div className="right-box"></div>
         </div>
         <div className="footer-box">
-          <AuthorPortfolio />
+          <AuthorPortfolio
+            propsBlogsArr={this.props.propsBlogsArr}
+            propsBlog={filteredBlog}
+          />
         </div>
       </div>
     );
