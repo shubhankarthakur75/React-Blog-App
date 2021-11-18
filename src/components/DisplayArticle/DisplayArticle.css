@@ -3,8 +3,12 @@
   src: url("../../assets/fonts/georgia/Georgia.ttf");
 }
 
+.display-article {
+  margin-top: 20px;
+}
 .display-article .article-title {
   font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: left;
   font-size: 30px;
   padding-top: 20px;
 }

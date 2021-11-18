@@ -1,11 +1,31 @@
 .author-portfolio {
   width: 80%;
   margin: auto;
-  border: 2px solid blue;
 }
 .author-portfolio .portfolio-title {
   text-align: left;
   color: #000000;
   font-size: 20px;
   font-weight: 500;
+}
+.author-portfolio .articles-container {
+  border-top: 3px solid #f0f0f0;
+  margin: 35px 0px;
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.author-portfolio .articles-container .article {
+  width: 29%;
+}
+.author-portfolio .articles-container .article-image {
+  width: 100%;
+}
+.author-portfolio .articles-container .article-name {
+  text-align: left;
+  font-size: 22px;
+  font-weight: 500;
+  color: #404040;
 }

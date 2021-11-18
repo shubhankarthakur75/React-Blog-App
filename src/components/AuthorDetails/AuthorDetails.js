@@ -18,7 +18,7 @@ class AuthorDetails extends Component {
           />
         </div>
         <div className="author-info">
-          <p className="author-name">Author Name</p>
+          <p className="author-name">{this.props.propsBlog.author}</p>
           <p className="author-article-details">
             <span>Jan 28,2021</span>
             <span>.</span>

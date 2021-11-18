@@ -1,7 +1,6 @@
 .read-article .box-container {
   width: 100%;
   margin: auto;
-  border: 2px solid black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,15 +8,12 @@
 }
 .read-article .left-box {
   width: 30%;
-  border: 1px solid red;
 }
 .read-article .middle-box {
   width: 40%;
-  border: 1px solid red;
 }
 .read-article .right-box {
   width: 30%;
-  border: 1px solid red;
 }
 .read-article .left-box {
   display: flex;
@@ -36,4 +32,8 @@
 .read-article .icon-and-details-container span {
   text-align: left;
   margin-right: 10px;
+}
+.read-article .footer-box {
+  background-color: #fafafa;
+  padding: 40px 0px;
 }

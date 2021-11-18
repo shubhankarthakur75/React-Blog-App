@@ -16,7 +16,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User1",
         },
         {
           id: "bollywood2",
@@ -25,7 +25,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User2",
         },
         {
           id: "bollywood3",
@@ -34,7 +34,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User3",
         },
         {
           id: "bollywood4",
@@ -43,7 +43,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User4",
         },
         {
           id: "bollywood5",
@@ -52,7 +52,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User5",
         },
         {
           id: "bollywood6",
@@ -61,7 +61,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User6",
         },
         {
           id: "bollywood7",
@@ -70,7 +70,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User7",
         },
 
         {
@@ -80,7 +80,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User1",
         },
 
         {
@@ -90,7 +90,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User1",
         },
         {
           id: "technology2",
@@ -99,7 +99,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User2",
         },
         {
           id: "technology3",
@@ -108,7 +108,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User3",
         },
         {
           id: "technology4",
@@ -117,7 +117,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User4",
         },
         {
           id: "technology5",
@@ -126,7 +126,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User5",
         },
         {
           id: "technology6",
@@ -135,7 +135,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User6",
         },
         {
           id: "technology7",
@@ -144,7 +144,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User7",
         },
         {
           id: "technology8",
@@ -153,7 +153,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User8",
         },
 
         {
@@ -163,7 +163,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User1",
         },
         {
           id: "fitness2",
@@ -172,7 +172,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User2",
         },
         {
           id: "fitness3",
@@ -181,7 +181,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User3",
         },
         {
           id: "fitness4",
@@ -190,7 +190,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User4",
         },
 
         {
@@ -200,7 +200,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User5",
         },
 
         {
@@ -210,7 +210,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User1",
         },
         {
           id: "food2",
@@ -219,7 +219,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User2",
         },
         {
           id: "food3",
@@ -228,7 +228,7 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
-          author: "User",
+          author: "User3",
         },
       ],
     },
@@ -274,7 +274,7 @@ class Main extends Component {
             />
           </Route>
           <Route exact path="/:id">
-            <ReadArticle />
+            <ReadArticle propsBlogsArr={this.state.blogs.blogsArr} />
           </Route>
         </Switch>
       </div>

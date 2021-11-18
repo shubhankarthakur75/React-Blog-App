@@ -9,6 +9,12 @@ import clapIcon from "../../assets/images/clapping-image-30px.png";
 
 class ReadArticle extends Component {
   render() {
+    const [...blogs] = this.props.propsBlogsArr;
+    const filteredBlogsArr = blogs.filter((blog) => {
+      return blog.id === this.props.match.params.id;
+    });
+    let filteredBlog = filteredBlogsArr[0];
+
     return (
       <div className="read-article">
         <Header1 />
@@ -30,7 +36,7 @@ class ReadArticle extends Component {
             </div>
           </div>
           <div className="middle-box">
-            <DisplayArticle />
+            <DisplayArticle propsBlog={filteredBlog} />
           </div>
           <div className="right-box"></div>
         </div>
