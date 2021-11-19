@@ -14,6 +14,7 @@ class ReadArticle extends Component {
       return blog.id === this.props.match.params.id;
     });
     let filteredBlog = filteredBlogsArr[0];
+    console.log(filteredBlog);
 
     return (
       <div className="read-article">

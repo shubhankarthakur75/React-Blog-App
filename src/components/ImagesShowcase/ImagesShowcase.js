@@ -18,24 +18,26 @@ class ImagesShowcase extends Component {
     const randomBlog3 = this.randomBlogSelector();
     return (
       <div className="images-showcase">
-        <Link to={`/${randomBlog1.id}`}>
-          <div
-            className="showcase-left-box hover-scale"
-            style={{
-              backgroundImage: `url(${randomBlog1.imageURL})`,
-              backgroundSize: "cover",
-            }}
-          >
-            <div className="showcase-image-details-container">
-              <p className="showcase-image-title">{randomBlog1.name}</p>
-              <p className="showcase-image-category-and-date">
-                <span>{randomBlog1.category}</span>
-                <span>/</span>
-                <span> August 17</span>
-              </p>
+        <div className="showcase-left-box hover-scale">
+          <Link to={`/${randomBlog1.id}`}>
+            <div
+              className="showcase-left-box-image-container"
+              style={{
+                backgroundImage: `url(${randomBlog1.imageURL})`,
+                backgroundSize: "cover",
+              }}
+            >
+              <div className="showcase-image-details-container">
+                <p className="showcase-image-title">{randomBlog1.name}</p>
+                <p className="showcase-image-category-and-date">
+                  <span>{randomBlog1.category}</span>
+                  <span>/</span>
+                  <span> August 17</span>
+                </p>
+              </div>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
         <div className="showcase-right-box">
           <Link to={`/${randomBlog2.id}`}>
             <div

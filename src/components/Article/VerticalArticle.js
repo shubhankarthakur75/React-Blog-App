@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./VerticalArticle.css";
-import lakeImage from "../../assets/images/lake-image.jpg";
 
 class VerticalArticle extends Component {
   render() {

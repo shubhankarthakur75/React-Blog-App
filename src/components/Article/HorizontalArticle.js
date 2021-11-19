@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./HorizontalArticle.css";
-import lakeImage from "../../assets/images/lake-image.jpg";
 
 class HorizontalArticle extends Component {
   render() {

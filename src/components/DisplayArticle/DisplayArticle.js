@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./DisplayArticle.css";
 import AuthorDetails from "../AuthorDetails/AuthorDetails";
-import articleImage from "../../assets/images/lake-image.jpg";
 import clappingImage from "../../assets/images/clapping-image-30px.png";
 
 export class DisplayArticle extends Component {
@@ -20,15 +19,27 @@ export class DisplayArticle extends Component {
         <div className="author-details-container">
           <AuthorDetails propsBlog={this.props.propsBlog} />
         </div>
+
         <div className="article-image-container">
-          <img src={articleImage} className="article-image" alt="article" />
+          <img
+            src={`${this.props.propsBlog.imageURL}`}
+            className="article-image"
+            alt="article"
+          />
         </div>
+
         <div className="article-text-container">
           {this.props.propsBlog.description}
         </div>
+
         <div className="keyword-container">
-          <button className="keyword-btn">React</button>
-          <button className="keyword-btn">Javascript</button>
+          {this.props.propsBlog.keyword.map((keyword, index) => {
+            return (
+              <button className="keyword-btn" keyword={index}>
+                {keyword}
+              </button>
+            );
+          })}
         </div>
         <div
           className="article-reactions"

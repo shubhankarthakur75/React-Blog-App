@@ -9,8 +9,8 @@ class Navbar extends Component {
         <NavLink exact to="/">
           <li>Home</li>
         </NavLink>
-        <NavLink to="/bollywood">
-          <li>Bollywood</li>
+        <NavLink to="/travel">
+          <li>Travel</li>
         </NavLink>
         <NavLink to="/hollywood">
           <li>Hollywood</li>

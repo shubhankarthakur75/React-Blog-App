@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./AuthorPortfolio.css";
 import { Link } from "react-router-dom";
 import AuthorDetails from "../AuthorDetails/AuthorDetails";
-import lakeImage from "../../assets/images/lake-image.jpg";
 
 export class AuthorPortfolio extends Component {
   render() {
@@ -20,7 +19,11 @@ export class AuthorPortfolio extends Component {
             return (
               <div className="article" key={index}>
                 <Link to={`/${blog.id}`}>
-                  <img src={lakeImage} className="article-image" alt="" />
+                  <img
+                    src={`${blog.imageURL}`}
+                    className="article-image"
+                    alt=""
+                  />
                   <p className="article-name">{blog.name}</p>
                 </Link>
                 <AuthorDetails
