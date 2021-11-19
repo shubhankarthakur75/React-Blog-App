@@ -20,31 +20,33 @@ class ImagesShowcase extends Component {
       <div className="images-showcase">
         <div className="showcase-left-box hover-scale">
           <Link to={`/${randomBlog1.id}`}>
-            <img
-              src={`${randomBlog1.imageURL}`}
-              className="showcase-image"
-              alt=""
-            />
-            <div className="showcase-image-details-container">
-              <p className="showcase-image-title">{randomBlog1.name}</p>
-              <p className="showcase-image-category-and-date">
-                <span>{randomBlog1.category}</span>
-                <span>/</span>
-                <span> August 17</span>
-              </p>
+            <div
+              className="showcase-left-box-image-container"
+              style={{
+                backgroundImage: `url(${randomBlog1.imageURL})`,
+                backgroundSize: "cover",
+              }}
+            >
+              <div className="showcase-image-details-container">
+                <p className="showcase-image-title">{randomBlog1.name}</p>
+                <p className="showcase-image-category-and-date">
+                  <span>{randomBlog1.category}</span>
+                  <span>/</span>
+                  <span> August 17</span>
+                </p>
+              </div>
             </div>
           </Link>
         </div>
-
         <div className="showcase-right-box">
-          <div className="showcase-right-top-box hover-scale ">
-            <Link to={`/${randomBlog2.id}`}>
-              <img
-                src={`${randomBlog2.imageURL}`}
-                className="showcase-image"
-                alt=""
-              />
-
+          <Link to={`/${randomBlog2.id}`}>
+            <div
+              className="showcase-right-top-box hover-scale "
+              style={{
+                backgroundImage: `url(${randomBlog2.imageURL})`,
+                backgroundSize: "cover",
+              }}
+            >
               <div className="showcase-image-details-container">
                 <p className="showcase-image-title">{randomBlog2.name}</p>
                 <p className="showcase-image-category-and-date">
@@ -53,17 +55,16 @@ class ImagesShowcase extends Component {
                   <span> August 17</span>
                 </p>
               </div>
-            </Link>
-          </div>
-
-          <div className="showcase-right-bottom-box hover-scale">
-            <Link to={`/${randomBlog3.id}`}>
-              <img
-                src={`${randomBlog3.imageURL}`}
-                className="showcase-image"
-                alt=""
-              />
-
+            </div>
+          </Link>
+          <Link to={`/${randomBlog2.id}`}>
+            <div
+              className="showcase-right-bottom-box hover-scale"
+              style={{
+                backgroundImage: `url(${randomBlog3.imageURL})`,
+                backgroundSize: "cover",
+              }}
+            >
               <div className="showcase-image-details-container">
                 <p className="showcase-image-title">{randomBlog3.name}</p>
                 <p className="showcase-image-category-and-date">
@@ -72,8 +73,8 @@ class ImagesShowcase extends Component {
                   <span> August 17</span>
                 </p>
               </div>
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
       </div>
     );
