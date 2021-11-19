@@ -7,7 +7,11 @@ class VerticalArticle extends Component {
     return (
       <div className="vertical-article">
         <div className="article-image-container">
-          <img src={lakeImage} className="article-image" alt="lake" />
+          <img
+            src={`${this.props.propsImageURL}`}
+            className="article-image"
+            alt="lake"
+          />
         </div>
         <div className="article-title">{this.props.propsBlogName}</div>
         <div className="article-desc">{this.props.propsDescription}</div>

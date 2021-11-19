@@ -7,7 +7,11 @@ class HorizontalArticle extends Component {
     return (
       <div className="horizontal-article">
         <div className="article-image-container">
-          <img src={lakeImage} className="article-image" alt="lake" />
+          <img
+            src={`${this.props.propsImageURL}`}
+            className="article-image"
+            alt="lake"
+          />
         </div>
         <div className="article-details-container">
           <div className="article-title">{this.props.propsBlogName}</div>

@@ -17,6 +17,7 @@ class HorizontalArticles extends Component {
                     propsBlogName={blog.name}
                     propsDescription={blog.description}
                     propsCategory={blog.category}
+                    propsImageURL={blog.imageURL}
                   />
                 </Link>
               </div>

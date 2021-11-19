@@ -11,7 +11,7 @@ export class Category extends Component {
 
     const filteredCategoryArr = blogs.filter((blog) => {
       return (
-        blog.category.toLowerCase() ==
+        blog.category.toLowerCase() ===
         this.props.propsCategoryName.toLowerCase()
       );
     });
@@ -28,7 +28,7 @@ export class Category extends Component {
             />
           </div>
           <div className="right-box">
-            <TopPostsVertical />
+            <TopPostsVertical propsBlogsArr={filteredCategoryArr} />
             <Advertisement />
           </div>
         </div>

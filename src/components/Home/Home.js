@@ -19,7 +19,7 @@ class Home extends Component {
     return (
       <div className="home">
         <Header />
-        <ImagesShowcase />
+        <ImagesShowcase propsBlogsArr={blogs} />
         <HorizontalArticles propsBlogs={blogs.slice(0, 3)} />
         <div className="flex-row">
           <div className="left-box">
@@ -28,11 +28,11 @@ class Home extends Component {
               propsBlogsArr={blogs}
               propsNoOfArticles={4}
             />
-            <Gallery />
+            <Gallery propsBlogsArr={blogs} />
           </div>
           <div className="right-box">
             <Advertisement />
-            <TopPostsVertical />
+            <TopPostsVertical propsBlogsArr={blogs} />
           </div>
         </div>
         <HorizontalStories propsBlogsArr={blogs} />

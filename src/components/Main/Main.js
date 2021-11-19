@@ -16,6 +16,8 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          imageURL:
+            " https://images.unsplash.com/photo-1535378917042-10a22c95931a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1148&q=80 ",
           claps: 21,
           author: "User1",
         },
@@ -87,8 +89,22 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          imageURL:
+            "https://images.unsplash.com/photo-1518929458119-e5bf444c30f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80",
           claps: 201,
           author: "User1",
+        },
+        {
+          id: "hollywood2",
+          name: "hollywood2",
+          category: "hollywood",
+          dateOfPublishment: "14/11/2021",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          imageURL:
+            "https://images.unsplash.com/photo-1621955964441-c173e01c135b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1186&q=80",
+          claps: 201,
+          author: "User2",
         },
 
         {
@@ -98,6 +114,8 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          imageURL:
+            " https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80 ",
           claps: 18,
           author: "User1",
         },
@@ -108,6 +126,8 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          imageURL:
+            " https://images.unsplash.com/photo-1526666923127-b2970f64b422?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1172&q=80 ",
           claps: 61,
           author: "User2",
         },
@@ -118,6 +138,8 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          imageURL:
+            "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80  ",
           claps: 31,
           author: "User3",
         },
@@ -128,6 +150,8 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          imageURL:
+            " https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80 ",
           claps: 52,
           author: "User4",
         },
@@ -138,6 +162,8 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          imageURL:
+            " https://images.unsplash.com/photo-1606814540563-5c02d62fd409?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1212&q=80 ",
           claps: 103,
           author: "User5",
         },
@@ -148,6 +174,8 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          imageURL:
+            " https://images.unsplash.com/photo-1483389127117-b6a2102724ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80 ",
           claps: 62,
           author: "User6",
         },
@@ -158,6 +186,8 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          imageURL:
+            " https://images.unsplash.com/photo-1580983222866-a16bc7f1cdc3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80 ",
           claps: 172,
           author: "User7",
         },
@@ -168,6 +198,8 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          imageURL:
+            " https://images.unsplash.com/photo-1535378917042-10a22c95931a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1148&q=80 ",
           claps: 81,
           author: "User8",
         },
@@ -179,6 +211,9 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          imageURL:
+            "https://images.unsplash.com/photo-1598632640487-6ea4a4e8b963?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80",
+          claps: 61,
           author: "User1",
         },
         {
@@ -188,6 +223,8 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          imageURL:
+            "https://images.unsplash.com/photo-1599058918144-1ffabb6ab9a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
           claps: 21,
           author: "User2",
         },
@@ -198,6 +235,8 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          imageURL:
+            "https://images.unsplash.com/photo-1562771242-a02d9090c90c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80",
           claps: 88,
           author: "User3",
         },
@@ -208,6 +247,8 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          imageURL:
+            "https://images.unsplash.com/photo-1504025468847-0e438279542c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1269&q=80",
           claps: 181,
           author: "User4",
         },
@@ -220,6 +261,8 @@ class Main extends Component {
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
           claps: 74,
+          imageURL:
+            "https://images.unsplash.com/photo-1604315608346-eeab3bb232bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80",
           author: "User5",
         },
 
@@ -231,6 +274,8 @@ class Main extends Component {
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
           claps: 51,
+          imageURL:
+            "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80",
           author: "User1",
         },
         {
@@ -240,6 +285,8 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          imageURL:
+            "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80",
           claps: 128,
           author: "User2",
         },
@@ -250,6 +297,8 @@ class Main extends Component {
           dateOfPublishment: "14/11/2021",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
+          imageURL:
+            "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=775&q=80",
           claps: 41,
           author: "User3",
         },

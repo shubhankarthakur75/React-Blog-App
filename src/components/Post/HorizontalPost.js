@@ -7,16 +7,23 @@ class HorizontalPost extends Component {
     return (
       <div className="horizontal-post">
         <div className="post-image-container">
-          <img src={lakeImage} className="post-image" alt="lake" />
+          <img
+            src={`${this.props.propsPost.imageURL}`}
+            className="post-image"
+            alt="lake"
+          />
         </div>
         <div className="post-details-container">
-          <div className="post-title">Lorem ipsum dolor sit amet</div>
+          <div className="post-title">{this.props.propsPost.name}</div>
+
           <div className="post-category-and-date">
-            <span className="article-category">Travel</span>/
-            <span className="article-date">August 21 2021</span>
+            <span className="post-category">
+              {this.props.propsPost.category}
+            </span>
+            /<span className="post-date">August 21 2021</span>
           </div>
         </div>
-        <div className="post-rank-container">1</div>
+        <div className="post-rank-container">{this.props.propsRank}</div>
       </div>
     );
   }
