@@ -25,28 +25,30 @@ class AuthorDetails extends Component {
             <span>10 min read</span>
           </p>
         </div>
-        <div className="author-social-handles">
-          <img
-            className="social-media-acc-icon"
-            src={facebookIcon}
-            alt="facebook"
-          />
-          <img
-            className="social-media-acc-icon"
-            src={twitterIcon}
-            alt="twitter"
-          />
-          <img
-            className="social-media-acc-icon"
-            src={instagramIcon}
-            alt="instagram"
-          />
-          <img
-            className="social-media-acc-icon"
-            src={youtubeIcon}
-            alt="youtube"
-          />
-        </div>
+        {this.props.propsIsHide ? null : (
+          <div className="author-social-handles">
+            <img
+              className="social-media-acc-icon"
+              src={facebookIcon}
+              alt="facebook"
+            />
+            <img
+              className="social-media-acc-icon"
+              src={twitterIcon}
+              alt="twitter"
+            />
+            <img
+              className="social-media-acc-icon"
+              src={instagramIcon}
+              alt="instagram"
+            />
+            <img
+              className="social-media-acc-icon"
+              src={youtubeIcon}
+              alt="youtube"
+            />
+          </div>
+        )}
       </div>
     );
   }

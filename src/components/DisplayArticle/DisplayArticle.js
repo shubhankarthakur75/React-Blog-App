@@ -8,6 +8,11 @@ export class DisplayArticle extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
+  componentDidUpdate(prevProps) {
+    if (prevProps.propsBlog.id !== this.props.propsBlog.id) {
+      window.scrollTo(0, 0);
+    }
+  }
   render() {
     return (
       <div className="display-article">
@@ -25,13 +30,16 @@ export class DisplayArticle extends Component {
           <button className="keyword-btn">React</button>
           <button className="keyword-btn">Javascript</button>
         </div>
-        <div className="article-reactions">
+        <div
+          className="article-reactions"
+          onClick={() => this.props.propsHandleClaps(this.props.propsBlog.id)}
+        >
           <img
             src={clappingImage}
             className="reaction-image"
             alt="claping-hands"
           />
-          <p>9.3K</p>
+          <p>{this.props.propsBlog.claps}</p>
           <p>Claps</p>
         </div>
         <div className="author-details-container">

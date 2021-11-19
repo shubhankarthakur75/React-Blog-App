@@ -20,6 +20,9 @@
 .author-portfolio .articles-container .article {
   width: 29%;
 }
+.author-portfolio .articles-container .article a {
+  text-decoration: none;
+}
 .author-portfolio .articles-container .article-image {
   width: 100%;
 }

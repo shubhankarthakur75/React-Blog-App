@@ -16,6 +16,7 @@ class VerticalArticles extends Component {
       });
     }
   }
+
   loadMoreHandler = (n) => {
     this.setState((prevState) => {
       return {

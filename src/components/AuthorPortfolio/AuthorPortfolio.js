@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./AuthorPortfolio.css";
+import { Link } from "react-router-dom";
 import AuthorDetails from "../AuthorDetails/AuthorDetails";
 import lakeImage from "../../assets/images/lake-image.jpg";
 
@@ -15,12 +16,17 @@ export class AuthorPortfolio extends Component {
       <div className="author-portfolio">
         <div className="portfolio-title">{`More From ${this.props.propsBlog.author}`}</div>
         <div className="articles-container">
-          {splicedArr.map((blog) => {
+          {splicedArr.map((blog, index) => {
             return (
-              <div className="article">
-                <img src={lakeImage} className="article-image" alt="" />
-                <p className="article-name">{blog.name}</p>
-                {/* <AuthorDetails></AuthorDetails> */}
+              <div className="article" key={index}>
+                <Link to={`/${blog.id}`}>
+                  <img src={lakeImage} className="article-image" alt="" />
+                  <p className="article-name">{blog.name}</p>
+                </Link>
+                <AuthorDetails
+                  propsBlog={this.props.propsBlog}
+                  propsIsHide={true}
+                ></AuthorDetails>
               </div>
             );
           })}

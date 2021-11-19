@@ -13,7 +13,6 @@ class ReadArticle extends Component {
     const filteredBlogsArr = blogs.filter((blog) => {
       return blog.id === this.props.match.params.id;
     });
-    let blogId = this.props.match.params.id;
     let filteredBlog = filteredBlogsArr[0];
 
     return (
@@ -22,11 +21,16 @@ class ReadArticle extends Component {
         <div className="box-container">
           <div className="left-box">
             <div className="icons-container">
-              <div className="icon-and-details-container">
+              <div
+                className="icon-and-details-container"
+                onClick={() => {
+                  this.props.propsHandleClaps(filteredBlog.id);
+                }}
+              >
                 <span>
                   <img src={clapIcon} alt="clapping" />
                 </span>
-                <span>9.4k</span>
+                <span>{filteredBlog.claps}</span>
               </div>
               <div className="icon-and-details-container">
                 <span>
@@ -37,7 +41,10 @@ class ReadArticle extends Component {
             </div>
           </div>
           <div className="middle-box">
-            <DisplayArticle propsBlog={filteredBlog} />
+            <DisplayArticle
+              propsBlog={filteredBlog}
+              propsHandleClaps={this.props.propsHandleClaps}
+            />
           </div>
           <div className="right-box"></div>
         </div>
