@@ -13,20 +13,28 @@
   font-weight: 500;
 }
 
-/* Responsive HorizonatlArticle.css */
-/* For screen-size 1000px-1200px */
+/* Responsive Advertisement.css */
 
+/* For screen-size 1000px-1200px */
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
   .advertisement {
     width: 100%;
     height: 780px;
-    margin-top: 135px;
-    border: 2px solid #707070;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    margin-top: 125px;
   }
   .advertisement p {
     font-size: 28px;
+  }
+}
+
+/* For screen-size 800px-1000px */
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .advertisement {
+    width: 100%;
+    height: 580px;
+    margin-top: 65px;
+  }
+  .advertisement p {
+    font-size: 23px;
   }
 }

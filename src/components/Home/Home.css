@@ -12,3 +12,29 @@
 .home .flex-row .right-box {
   width: 32%;
 }
+
+/* Responsive Home.css */
+/* For screen-size 1000px-1200px */
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .home .flex-row .left-box {
+    width: 65%;
+  }
+  .home .flex-row .right-box {
+    width: 35%;
+  }
+}
+
+/* For screen-size 800px-1200px */
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .home .flex-row {
+    width: 82%;
+  }
+  .home .flex-row .left-box {
+    width: 65%;
+  }
+  .home .flex-row .right-box {
+    width: 35%;
+  }
+}

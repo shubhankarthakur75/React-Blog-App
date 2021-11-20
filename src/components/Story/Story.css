@@ -15,6 +15,9 @@
 .story .story-category-and-date {
   margin: 30px 0px;
 }
+.story .story-category-and-date span {
+  margin-right: 5px;
+}
 .story .story-category {
   font-size: 14px;
   color: #404040;
@@ -25,5 +28,44 @@
   font-size: 14px;
   color: #404040;
   opacity: 0.7;
-  padding-left: 5px;
+}
+
+/* Responsive Story.css */
+
+/* For screen-size 1000px-1200px */
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .story {
+    padding: 0px 10px;
+  }
+  .story .story-title {
+    font-size: 27px;
+  }
+  .story .story-desc {
+    font-size: 14px;
+  }
+  .story .story-category {
+    font-size: 13px;
+  }
+  .story .story-date {
+    font-size: 13px;
+  }
+}
+
+/* For screen-size 800px-1000px */
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .story {
+    padding: 0px 10px;
+  }
+  .story .story-title {
+    font-size: 27px;
+  }
+  .story .story-desc {
+    font-size: 14px;
+  }
+  .story .story-category {
+    font-size: 13px;
+  }
+  .story .story-date {
+    font-size: 13px;
+  }
 }

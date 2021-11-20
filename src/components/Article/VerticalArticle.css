@@ -36,11 +36,27 @@
   padding-left: 5px;
 }
 
-/* Responsive HorizonatlArticle.css */
+/* Responsive VerticalArticle.css */
 /* For screen-size 1000px-1200px */
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
   .vertical-article .article-desc {
+    margin: 10px 10px;
+  }
+  .vertical-article .article-category-and-date {
+    font-size: 14px;
+    margin: 15px 10px;
+  }
+}
+
+/* For screen-size 800px-1000px */
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .vertical-article .article-title {
+    font-size: 21px;
+  }
+  .vertical-article .article-desc {
+    font-size: 14px;
     margin: 10px 10px;
   }
   .vertical-article .article-category-and-date {

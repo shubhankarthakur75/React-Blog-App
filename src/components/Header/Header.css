@@ -11,3 +11,12 @@
 .header-container .navbar-container {
   width: 100%;
 }
+
+/* Responsive Header.css */
+/* For screen-size 800px-1000px */
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .header-container {
+    width: 82%;
+  }
+}

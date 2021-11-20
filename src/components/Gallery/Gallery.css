@@ -30,6 +30,22 @@
 /* For screen-size 1000px-1200px */
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .gallery {
+    margin-top: 80px;
+  }
+  .gallery .gallery-image-title {
+    font-size: 27px;
+  }
+  .gallery .gallery-image-category-and-date {
+    font-size: 14px;
+  }
+}
+
+/* For screen-size 800px-1000px */
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .gallery {
+    margin-top: 60px;
+  }
   .gallery .gallery-image-title {
     font-size: 27px;
   }

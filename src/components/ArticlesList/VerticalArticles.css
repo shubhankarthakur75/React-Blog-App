@@ -44,12 +44,12 @@
   margin-left: 5px;
 }
 
-/* Responsive HorizonatlArticle.css */
+/* Responsive VerticalArticles.css */
 /* For screen-size 1000px-1200px */
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
   .vertical-articles {
-    margin: 40px auto;
+    margin: 30px auto;
   }
   .vertical-articles .vertical-articles-title {
     font-size: 28px;
@@ -57,5 +57,23 @@
   .vertical-articles .article-container {
     width: 90%;
     padding: 15px 0px;
+  }
+}
+
+/* For screen-size 800px-1000px */
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .vertical-articles {
+    margin: 30px auto;
+  }
+  .vertical-articles .vertical-articles-title {
+    font-size: 27px;
+  }
+  .vertical-articles .article-container {
+    width: 90%;
+    padding: 0px 0px;
+  }
+  .vertical-articles .expand-btn span {
+    font-size: 15px;
   }
 }

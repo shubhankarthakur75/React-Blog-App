@@ -68,7 +68,7 @@
 }
 
 /* Reponsive ImageShowcase.css */
-/* For screen-size */
+/* For screen-size (1000px-1200px) */
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
   .images-showcase .showcase-image-title {
@@ -76,5 +76,19 @@
   }
   .images-showcase .showcase-image-category-and-date {
     font-size: 14px;
+  }
+}
+
+/* For screen-size (800px-1000px)*/
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .images-showcase {
+    width: 82%;
+  }
+  .images-showcase .showcase-image-title {
+    font-size: 23px;
+  }
+  .images-showcase .showcase-image-category-and-date {
+    font-size: 13px;
   }
 }

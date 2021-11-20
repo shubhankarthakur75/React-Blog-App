@@ -12,3 +12,18 @@
 .category .flex-row .right-box {
   width: 32%;
 }
+
+/* Responsive Category.css */
+
+/* For screen-size 800px-1000px */
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .category .flex-row {
+    width: 82%;
+  }
+  .category .flex-row .left-box {
+    width: 65%;
+  }
+  .category .flex-row .right-box {
+    width: 35%;
+  }
+}
