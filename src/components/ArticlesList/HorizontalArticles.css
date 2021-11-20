@@ -28,3 +28,22 @@
 .horizontal-articles .article-container {
   width: 31%;
 }
+
+/* Responsive HorizonatlArticle.css */
+/* For screen-size 1000px-1200px */
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .horizontal-articles {
+    margin: 50px auto 20px auto;
+  }
+
+  .horizontal-articles .horizontal-articles-title {
+    font-size: 28px;
+    margin: 10px;
+    padding: 5px 0px;
+  }
+
+  .horizontal-articles .article-container {
+    width: 32%;
+  }
+}

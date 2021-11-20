@@ -66,3 +66,15 @@
 .hover-scale:hover {
   transform: scale(1.005, 1.005);
 }
+
+/* Reponsive ImageShowcase.css */
+/* For screen-size */
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .images-showcase .showcase-image-title {
+    font-size: 27px;
+  }
+  .images-showcase .showcase-image-category-and-date {
+    font-size: 14px;
+  }
+}

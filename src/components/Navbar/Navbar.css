@@ -19,3 +19,11 @@
 .navbar .active li {
   color: #f08080;
 }
+
+/* Responsive Logo.css */
+/* For screen-size  */
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .navbar li {
+    font-size: 16px;
+  }
+}

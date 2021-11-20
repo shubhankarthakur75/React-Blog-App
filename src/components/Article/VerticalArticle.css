@@ -35,3 +35,16 @@
   opacity: 0.7;
   padding-left: 5px;
 }
+
+/* Responsive HorizonatlArticle.css */
+/* For screen-size 1000px-1200px */
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .vertical-article .article-desc {
+    margin: 10px 10px;
+  }
+  .vertical-article .article-category-and-date {
+    font-size: 14px;
+    margin: 15px 10px;
+  }
+}

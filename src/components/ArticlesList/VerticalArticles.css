@@ -1,5 +1,4 @@
 .vertical-articles {
-  /* width: 68%; */
   width: 100%;
   margin: 50px auto;
   text-align: left;
@@ -43,4 +42,20 @@
   color: #a2a2a2;
   font-size: 16px;
   margin-left: 5px;
+}
+
+/* Responsive HorizonatlArticle.css */
+/* For screen-size 1000px-1200px */
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .vertical-articles {
+    margin: 40px auto;
+  }
+  .vertical-articles .vertical-articles-title {
+    font-size: 28px;
+  }
+  .vertical-articles .article-container {
+    width: 90%;
+    padding: 15px 0px;
+  }
 }

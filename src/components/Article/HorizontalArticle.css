@@ -45,3 +45,20 @@
   opacity: 0.7;
   padding-left: 5px;
 }
+
+/* Responsive HorizonatlArticle.css */
+/* For screen-size 1000px-1200px */
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .horizontal-article .article-desc {
+    margin: 10px 0px;
+  }
+  .horizontal-article .article-details-container {
+    width: 60%;
+    padding-left: 30px;
+  }
+  .horizontal-article .article-category-and-date {
+    font-size: 14px;
+    margin: 15px 0px;
+  }
+}

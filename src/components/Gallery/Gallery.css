@@ -1,8 +1,8 @@
 .gallery {
   position: relative;
   width: 90%;
-  height: 380px;
-  margin-top: 110px;
+  height: 28vw;
+  margin-top: 90px;
   border-radius: 5px;
   box-shadow: 0px 5px 10px #0000000d;
 }
@@ -24,4 +24,16 @@
   color: #fcfcfc;
   margin: 5px;
   text-align: left;
+}
+
+/* Responsive Gallery.css */
+/* For screen-size 1000px-1200px */
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .gallery .gallery-image-title {
+    font-size: 27px;
+  }
+  .gallery .gallery-image-category-and-date {
+    font-size: 14px;
+  }
 }
