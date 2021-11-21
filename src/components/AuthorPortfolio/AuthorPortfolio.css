@@ -47,3 +47,12 @@
     font-size: 20px;
   }
 }
+/* For screen-size 650px-800px */
+@media screen and (min-width: 650px) and (max-width: 800px) {
+  .author-portfolio .author-details-container {
+    display: none;
+  }
+  .author-portfolio .articles-container .article-name {
+    font-size: 20px;
+  }
+}

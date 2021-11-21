@@ -27,3 +27,18 @@
     width: 35%;
   }
 }
+/* For screen-size 650px-800px */
+@media screen and (min-width: 650px) and (max-width: 800px) {
+  .category .flex-row {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .category .flex-row .left-box {
+    width: 100%;
+  }
+  .category .flex-row .right-box {
+    width: 100%;
+  }
+}

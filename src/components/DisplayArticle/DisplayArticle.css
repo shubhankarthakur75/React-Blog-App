@@ -71,3 +71,15 @@
     margin-right: 18px;
   }
 }
+/* For screen-size 650px-800px */
+@media screen and (min-width: 650px) and (max-width: 800px) {
+  .display-article .article-title {
+    font-size: 28px;
+  }
+  .display-article .keyword-btn {
+    padding: 10px 10px;
+  }
+  .display-article .keyword-btn {
+    margin-right: 18px;
+  }
+}

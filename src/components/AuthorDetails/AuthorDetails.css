@@ -81,3 +81,21 @@
     width: 21px;
   }
 }
+/* For screen-size 650px-800px */
+@media screen and (min-width: 650px) and (max-width: 800px) {
+  .author-details .author-image-container {
+    padding-top: 15px;
+  }
+  .author-details .author-image {
+    height: 65px;
+    width: 65px;
+  }
+  .author-details .author-info {
+    width: 50%;
+  }
+  .author-details .social-media-acc-icon {
+    margin: 4px;
+    height: 21px;
+    width: 21px;
+  }
+}
