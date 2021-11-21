@@ -9,7 +9,7 @@ class SigninFrom extends Component {
     passwordCopy: "",
     passwordLengthError: false,
     passwordMismatchedError: false,
-    loginMessage: false,
+    successfulLoginMessage: false,
   };
 
   handleChange = (e) => {
@@ -31,9 +31,10 @@ class SigninFrom extends Component {
     if (this.state.password === this.state.passwordCopy) {
       this.props.history.push("/");
       this.setState({ passwordMismatchedError: false });
-      this.setState({ loginMessage: true });
+      this.setState({ successfulLoginMessage: true });
     } else {
       this.setState({ passwordMismatchedError: true });
+      this.setState({ successfulLoginMessage: false });
     }
   };
 
@@ -93,7 +94,7 @@ class SigninFrom extends Component {
             {this.state.passwordMismatchedError === true ? (
               <p className="error-message">Please re-enter password</p>
             ) : null}
-            {this.state.loginMessage === true ? (
+            {this.state.successfulLoginMessage === true ? (
               <p className="success-message">
                 Succesfully Registered! Please Login agian
               </p>
