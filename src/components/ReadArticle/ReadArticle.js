@@ -28,16 +28,16 @@ class ReadArticle extends Component {
                   this.props.propsHandleClaps(filteredBlog.id);
                 }}
               >
-                <span>
+                <span className="icon-image">
                   <img src={clapIcon} alt="clapping" />
                 </span>
-                <span>{filteredBlog.claps}</span>
+                <span className="icon-image-text">{filteredBlog.claps}</span>
               </div>
               <div className="icon-and-details-container">
-                <span>
+                <span className="icon-image">
                   <img src={shareIcon} alt="share" />
                 </span>
-                <span>Share this article</span>
+                <span className="icon-image-text">Share this article</span>
               </div>
             </div>
           </div>

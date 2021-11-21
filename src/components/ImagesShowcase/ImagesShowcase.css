@@ -92,3 +92,16 @@
     font-size: 13px;
   }
 }
+/* For screen-size (650px-800px)*/
+
+@media screen and (min-width: 650px) and (max-width: 800px) {
+  .images-showcase {
+    width: 80%;
+  }
+  .images-showcase .showcase-image-title {
+    font-size: 21px;
+  }
+  .images-showcase .showcase-image-category-and-date {
+    font-size: 13px;
+  }
+}

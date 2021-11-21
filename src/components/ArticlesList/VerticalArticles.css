@@ -77,3 +77,21 @@
     font-size: 15px;
   }
 }
+
+/* For screen-size 650px-800px */
+
+@media screen and (min-width: 650px) and (max-width: 800px) {
+  .vertical-articles {
+    margin: 30px auto;
+  }
+  .vertical-articles .vertical-articles-title {
+    font-size: 27px;
+  }
+  .vertical-articles .article-container {
+    width: 100%;
+    padding: 0px 0px;
+  }
+  .vertical-articles .expand-btn span {
+    font-size: 15px;
+  }
+}

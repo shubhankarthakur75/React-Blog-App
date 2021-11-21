@@ -53,3 +53,21 @@
   font-size: 14px;
   margin-right: 5px;
 }
+
+/* Responsive DisplayArticle.css */
+
+/* For screen-size 1000px-1200px */
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .display-article .keyword-btn {
+    margin-right: 20px;
+  }
+}
+/* For screen-size 800px-1000px */
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .display-article .keyword-btn {
+    padding: 10px 10px;
+  }
+  .display-article .keyword-btn {
+    margin-right: 18px;
+  }
+}

@@ -49,3 +49,35 @@
   width: 22px;
   border-radius: 5px;
 }
+
+/* Responsive AuthorDetails.css */
+
+/* For screen-size 1000px-1200px */
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .author-details .author-info {
+    width: 50%;
+  }
+  .author-details .social-media-acc-icon {
+    margin: 5px;
+    height: 21px;
+    width: 21px;
+  }
+}
+/* For screen-size 800px-1000px */
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .author-details .author-image-container {
+    padding-top: 15px;
+  }
+  .author-details .author-image {
+    height: 65px;
+    width: 65px;
+  }
+  .author-details .author-info {
+    width: 50%;
+  }
+  .author-details .social-media-acc-icon {
+    margin: 4px;
+    height: 21px;
+    width: 21px;
+  }
+}

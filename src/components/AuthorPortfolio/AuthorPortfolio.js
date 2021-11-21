@@ -26,10 +26,12 @@ export class AuthorPortfolio extends Component {
                   />
                   <p className="article-name">{blog.name}</p>
                 </Link>
-                <AuthorDetails
-                  propsBlog={this.props.propsBlog}
-                  propsIsHide={true}
-                ></AuthorDetails>
+                <div className="author-details-container">
+                  <AuthorDetails
+                    propsBlog={this.props.propsBlog}
+                    propsIsHide={true}
+                  ></AuthorDetails>
+                </div>
               </div>
             );
           })}

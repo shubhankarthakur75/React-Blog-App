@@ -84,3 +84,25 @@
     margin: 10px 0px;
   }
 }
+
+/* For screen-size 650px-800px */
+@media screen and (min-width: 650px) and (max-width: 800px) {
+  .horizontal-article .article-desc {
+    margin: 0px 0px;
+  }
+  .horizontal-article .article-details-container {
+    width: 60%;
+    padding-left: 20px;
+  }
+
+  .horizontal-article .article-title {
+    font-size: 21px;
+  }
+  .horizontal-article .article-desc {
+    font-size: 14px;
+  }
+  .horizontal-article .article-category-and-date {
+    font-size: 14px;
+    margin: 10px 0px;
+  }
+}

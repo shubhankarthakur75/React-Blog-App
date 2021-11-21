@@ -33,7 +33,45 @@
   text-align: left;
   margin-right: 10px;
 }
+
 .read-article .footer-box {
   background-color: #fafafa;
   padding: 40px 0px;
+}
+
+/* Responsive ReadArticle.css */
+
+/* For screen-size 1000px-1200px */
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .read-article .left-box {
+    width: 28%;
+  }
+  .read-article .icon-and-details-container .icon-image {
+    height: 25px;
+    width: 25px;
+  }
+  .read-article .icon-and-details-container .icon-image-text {
+    font-size: 15px;
+  }
+  .read-article .middle-box {
+    width: 44%;
+  }
+  .read-article .right-box {
+    width: 28%;
+  }
+}
+/* For screen-size 800px-1000px */
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .read-article .left-box {
+    width: 24%;
+  }
+  .read-article .middle-box {
+    width: 52%;
+  }
+  .read-article .right-box {
+    width: 24%;
+  }
+  .read-article .icons-container {
+    display: none;
+  }
 }

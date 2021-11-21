@@ -25,7 +25,8 @@
 }
 .author-portfolio .articles-container .article-image {
   width: 100%;
-  height: 230px;
+  /* height: 230px; */
+  height: 16vw;
   border-radius: 7px;
 }
 .author-portfolio .articles-container .article-name {
@@ -33,4 +34,16 @@
   font-size: 22px;
   font-weight: 500;
   color: #404040;
+}
+
+/* Responsive AuthorPortfolio.css */
+
+/* For screen-size 800px-1000px */
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .author-portfolio .author-details-container {
+    display: none;
+  }
+  .author-portfolio .articles-container .article-name {
+    font-size: 20px;
+  }
 }
