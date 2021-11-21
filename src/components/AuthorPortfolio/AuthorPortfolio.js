@@ -18,19 +18,28 @@ export class AuthorPortfolio extends Component {
           {splicedArr.map((blog, index) => {
             return (
               <div className="article" key={index}>
-                <Link to={`/${blog.id}`}>
-                  <img
-                    src={`${blog.imageURL}`}
-                    className="article-image"
-                    alt=""
-                  />
+                <div className="article-image-container">
+                  <Link to={`/${blog.id}`}>
+                    <img
+                      src={`${blog.imageURL}`}
+                      className="article-image"
+                      alt=""
+                    />
+                  </Link>
+                </div>
+
+                <div className="article-details-container">
                   <p className="article-name">{blog.name}</p>
-                </Link>
-                <div className="author-details-container">
-                  <AuthorDetails
-                    propsBlog={this.props.propsBlog}
-                    propsIsHide={true}
-                  ></AuthorDetails>
+                  <div className="article-category-and-date-container">
+                    <span className="article-category">{blog.category}</span>/
+                    <span className="article-date">August 21 2021</span>
+                  </div>
+                  <div className="author-details-container">
+                    <AuthorDetails
+                      propsBlog={this.props.propsBlog}
+                      propsIsHide={true}
+                    ></AuthorDetails>
+                  </div>
                 </div>
               </div>
             );

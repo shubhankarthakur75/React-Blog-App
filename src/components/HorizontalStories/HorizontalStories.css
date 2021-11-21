@@ -48,6 +48,10 @@
   margin-right: 10px;
 }
 
+.horizontal-stories .expand-down-btn {
+  display: none;
+}
+
 /* Responsive HorizonatlStories.css */
 
 /* For screen-size 1000px-1200px */
@@ -113,6 +117,12 @@
   .horizontal-stories .expand-btn span {
     font-size: 15px;
   }
+  .horizontal-stories .expand-right-btn {
+    display: none;
+  }
+  .horizontal-stories .expand-down-btn {
+    display: initial;
+  }
 }
 /* For screen-size 350px-650px */
 @media screen and (min-width: 350px) and (max-width: 650px) {
@@ -145,5 +155,11 @@
 
   .horizontal-stories .expand-btn span {
     font-size: 14px;
+  }
+  .horizontal-stories .expand-right-btn {
+    display: none;
+  }
+  .horizontal-stories .expand-down-btn {
+    display: initial;
   }
 }

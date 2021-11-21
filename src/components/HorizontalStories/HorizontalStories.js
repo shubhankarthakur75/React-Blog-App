@@ -3,6 +3,7 @@ import "./HorizontalStories.css";
 import { Link } from "react-router-dom";
 import Story from "../Story/Story";
 import rightArrow from "../../assets/images/right-arrow.svg";
+import downArrow from "../../assets/images/downward-arrow.svg";
 
 class HorizontalStories extends Component {
   state = {
@@ -37,10 +38,16 @@ class HorizontalStories extends Component {
               );
             })}
           </div>
-          <div className="expand-btn">
+          <div className="expand-btn expand-right-btn">
             <button onClick={this.viewMoreHandler}>
               <span>VIEW MORE</span>
               <img src={rightArrow} alt="right-arrow" />
+            </button>
+          </div>
+          <div className="expand-btn expand-down-btn">
+            <button onClick={this.viewMoreHandler}>
+              <span>VIEW MORE</span>
+              <img src={downArrow} alt="right-arrow" />
             </button>
           </div>
         </div>

@@ -99,7 +99,7 @@
 
 @media screen and (min-width: 350px) and (max-width: 650px) {
   .vertical-articles {
-    margin: 30px auto;
+    margin: 10px auto;
   }
   .vertical-articles .vertical-articles-title {
     font-size: 25px;

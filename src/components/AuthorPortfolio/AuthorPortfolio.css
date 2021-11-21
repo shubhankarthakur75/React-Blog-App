@@ -35,6 +35,21 @@
   font-weight: 500;
   color: #404040;
 }
+.author-portfolio .article-category-and-date-container {
+  font-size: 14px;
+  margin: 15px 0px;
+  text-align: left;
+}
+.author-portfolio .article-category {
+  color: #404040;
+  font-weight: 700;
+  padding-right: 5px;
+}
+.author-portfolio .article-date {
+  color: #404040;
+  opacity: 0.7;
+  padding-left: 5px;
+}
 
 /* Responsive AuthorPortfolio.css */
 
@@ -54,5 +69,62 @@
   }
   .author-portfolio .articles-container .article-name {
     font-size: 20px;
+  }
+}
+
+/* For screen-size 350px-650px */
+@media screen and (min-width: 350px) and (max-width: 650px) {
+  .author-portfolio {
+    width: 85%;
+  }
+  .author-portfolio .articles-container {
+    border-top: none;
+    margin: 30px 0px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .author-portfolio .articles-container .article {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    padding: 20px 0px;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  .author-portfolio .articles-container .article:first-child {
+    border-top: 2px solid #f0f0f0;
+  }
+
+  .author-portfolio .articles-container .article-image-container {
+    width: 40%;
+  }
+  .author-portfolio .articles-container .article-image {
+    height: 20vw;
+    border-radius: 7px;
+  }
+
+  .author-portfolio .author-details-container {
+    display: none;
+  }
+  .author-portfolio .article-details-container {
+    width: 60%;
+    padding-left: 15px;
+    text-align: left;
+  }
+  .author-portfolio .articles-container .article-name {
+    width: 50%;
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+
+  .author-portfolio .article-category-and-date-container {
+    font-size: 13px;
+    margin: 15px 0px;
+    text-align: left;
   }
 }

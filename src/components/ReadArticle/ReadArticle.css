@@ -91,3 +91,36 @@
     display: none;
   }
 }
+/* For screen-size 500px-650px */
+@media screen and (min-width: 500px) and (max-width: 650px) {
+  .read-article .left-box {
+    display: none;
+  }
+  .read-article .middle-box {
+    width: 80%;
+    margin: auto;
+  }
+  .read-article .right-box {
+    display: none;
+  }
+  .read-article .icons-container {
+    display: none;
+  }
+}
+
+/* For screen-size 350px-500px */
+@media screen and (min-width: 350px) and (max-width: 500px) {
+  .read-article .left-box {
+    display: none;
+  }
+  .read-article .middle-box {
+    width: 85%;
+    margin: auto;
+  }
+  .read-article .right-box {
+    display: none;
+  }
+  .read-article .icons-container {
+    display: none;
+  }
+}
