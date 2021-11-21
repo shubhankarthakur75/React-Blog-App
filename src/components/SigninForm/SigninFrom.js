@@ -8,14 +8,14 @@ class SigninFrom extends Component {
     password: "",
     passwordCopy: "",
     passwordLengthError: false,
-    passwordMismatchedError: "",
+    passwordMismatchedError: false,
     loginMessage: false,
   };
 
   handleChange = (e) => {
     this.setState({ [e.target.id]: e.target.value }, () => {
       if (e.target.id === "password") {
-        this.state.password.length > 8
+        this.state.password.length >= 8
           ? this.setState({
               passwordLengthError: false,
             })
@@ -28,10 +28,10 @@ class SigninFrom extends Component {
 
   registerUser = (e) => {
     e.preventDefault();
-    console.log(this.state.passwordMismatchedError);
     if (this.state.password === this.state.passwordCopy) {
       this.props.history.push("/");
       this.setState({ passwordMismatchedError: false });
+      this.setState({ loginMessage: true });
     } else {
       this.setState({ passwordMismatchedError: true });
     }
@@ -89,13 +89,23 @@ class SigninFrom extends Component {
               value={this.state.passwordCopy}
               onChange={(e) => this.handleChange(e)}
             />
+
             {this.state.passwordMismatchedError === true ? (
+              <p className="error-message">Please re-enter password</p>
+            ) : null}
+            {this.state.loginMessage === true ? (
+              <p className="success-message">
+                Succesfully Registered! Please Login agian
+              </p>
+            ) : null}
+
+            {/* {this.state.passwordMismatchedError === true ? (
               <p className="error-message">Please re-enter password</p>
             ) : this.state.passwordMismatchedError !== "" ? (
               <p className="success-message">
                 Succesfully Registered! Please Login agian
               </p>
-            ) : null}
+            ) : null} */}
           </li>
 
           <li>
