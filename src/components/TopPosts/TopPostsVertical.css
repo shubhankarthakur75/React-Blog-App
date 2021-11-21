@@ -57,3 +57,13 @@
     font-size: 27px;
   }
 }
+/* For screen-size 350px-650px */
+
+@media screen and (min-width: 350px) and (max-width: 650px) {
+  .top-posts-vertical {
+    margin: 20px 0px;
+  }
+  .top-posts-vertical .top-posts-title {
+    font-size: 27px;
+  }
+}

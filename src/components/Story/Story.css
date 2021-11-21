@@ -88,3 +88,21 @@
     font-size: 13px;
   }
 }
+/* For screen-size 350px-650px */
+@media screen and (min-width: 350px) and (max-width: 650px) {
+  .story {
+    padding: 0px 10px;
+  }
+  .story .story-title {
+    font-size: 27px;
+  }
+  .story .story-desc {
+    font-size: 14px;
+  }
+  .story .story-category {
+    font-size: 13px;
+  }
+  .story .story-date {
+    font-size: 13px;
+  }
+}

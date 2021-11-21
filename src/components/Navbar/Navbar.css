@@ -39,3 +39,18 @@
     font-size: 15px;
   }
 }
+
+/* For screen-size 350px-650px */
+@media screen and (min-width: 350px) and (max-width: 650px) {
+  .navbar {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px auto;
+  }
+  .navbar li {
+    padding: 15px;
+    border-bottom: 1px solid #f4f4f4;
+  }
+}

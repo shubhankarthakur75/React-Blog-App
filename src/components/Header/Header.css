@@ -12,6 +12,10 @@
   width: 100%;
 }
 
+.header-container .hamburger-menu-icon-container {
+  display: none;
+}
+
 /* Responsive Header.css */
 /* For screen-size 800px-1000px */
 
@@ -20,10 +24,45 @@
     width: 82%;
   }
 }
-/* For screen-size 650px-1000px */
 
+/* For screen-size 650px-1000px */
 @media screen and (min-width: 650px) and (max-width: 800px) {
   .header-container {
     width: 80%;
+  }
+}
+
+/* For screen-size 350px-650px */
+@media screen and (min-width: 350px) and (max-width: 650px) {
+  .header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .header-container .logo-container {
+    width: 40%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .header-container .navbar-container {
+    display: none;
+  }
+  .header-container .hamburger-menu-icon-container {
+    /* display: initial; */
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header .hamburger-menu-container {
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 1;
   }
 }

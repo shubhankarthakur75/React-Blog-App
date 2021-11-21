@@ -35,7 +35,7 @@ export class DisplayArticle extends Component {
         <div className="keyword-container">
           {this.props.propsBlog.keyword.map((keyword, index) => {
             return (
-              <button className="keyword-btn" keyword={index}>
+              <button className="keyword-btn" key={index}>
                 {keyword}
               </button>
             );

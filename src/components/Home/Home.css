@@ -56,3 +56,20 @@
     width: 100%;
   }
 }
+/* For screen-size 350px-650px */
+
+@media screen and (min-width: 350px) and (max-width: 650px) {
+  .home .flex-row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .home .flex-row .left-box {
+    width: 100%;
+  }
+  .home .flex-row .right-box {
+    width: 100%;
+  }
+}

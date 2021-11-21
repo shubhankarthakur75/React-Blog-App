@@ -59,3 +59,20 @@
     font-size: 50px;
   }
 }
+
+/* For screen-size 350px-650px */
+@media screen and (min-width: 350px) and (max-width: 650px) {
+  .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+  .logo-vertical-text {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .logo-horizontal-text {
+    font-size: 40px;
+  }
+}

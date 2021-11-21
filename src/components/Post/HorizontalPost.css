@@ -93,3 +93,34 @@
     display: none;
   }
 }
+/* For screen-size 800px-1000px */
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .horizontal-post .post-image-container {
+    width: 34%;
+  }
+
+  .horizontal-post .post-details-container {
+    width: 65%;
+    padding-left: 10px;
+  }
+
+  .horizontal-post .post-category-and-date {
+    margin: 10px 0px;
+  }
+
+  .horizontal-post .post-rank-container {
+    display: none;
+  }
+}
+
+/* For screen-size 350px-650px */
+@media screen and (min-width: 350px) and (max-width: 650px) {
+  .horizontal-post .post-rank-container {
+    width: 15%;
+    font-size: 40px;
+    padding-top: 0px;
+  }
+  .horizontal-post .post-category-and-date {
+    margin: 10px 0px;
+  }
+}
