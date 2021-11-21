@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Main.css";
 import { Switch, Route } from "react-router-dom";
+import UserLogin from "../UserLogin/UserLogin";
 import Home from "../Home/Home";
 import Category from "../Category/Category";
 import ReadArticle from "../ReadArticle/ReadArticle";
@@ -390,6 +391,9 @@ class Main extends Component {
       <div>
         <Switch>
           <Route exact path="/">
+            <UserLogin propsBlogsArr={this.state.blogs.blogsArr}></UserLogin>
+          </Route>
+          <Route exact path="/home">
             <Home propsBlogsArr={this.state.blogs.blogsArr} />
           </Route>
           <Route exact path="/travel">

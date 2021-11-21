@@ -6,8 +6,8 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.header1 .logo-container {
-  width: 30%;
+.header1 .header-container .logo-container {
+  width: 20%;
   margin-bottom: 10px;
 }
 .header1 .header-btn-container {
@@ -19,6 +19,11 @@
   background-color: #ffffff;
   color: #03a87c;
   border: 1px solid #03a87c;
-  margin-top: 25px;
+  margin: 25px 10px 20px 10px;
   cursor: pointer;
+}
+
+.header1 .header-btn:hover {
+  color: #ffffff;
+  background-color: #03a87c;
 }
