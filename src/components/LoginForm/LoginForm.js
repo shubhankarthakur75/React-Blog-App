@@ -43,7 +43,7 @@ class LoginForm extends Component {
       this.state.userNotFoundError === false &&
       this.state.incorrectPasswordError === false
     ) {
-      this.props.history.push("./React-Blog-App/home");
+      this.props.history.push("/React-Blog-App/home");
     }
   };
   render() {
