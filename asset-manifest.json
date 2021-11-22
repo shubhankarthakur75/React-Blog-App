@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React-Blog-App/static/css/main.58296ba2.chunk.css",
+    "main.css": "/React-Blog-App/static/css/main.8d25366d.chunk.css",
     "main.js": "/React-Blog-App/static/js/main.e3a1f068.chunk.js",
     "main.js.map": "/React-Blog-App/static/js/main.e3a1f068.chunk.js.map",
     "runtime-main.js": "/React-Blog-App/static/js/runtime-main.15dc1b29.js",
@@ -10,7 +10,7 @@
     "static/js/3.6eeff0f1.chunk.js": "/React-Blog-App/static/js/3.6eeff0f1.chunk.js",
     "static/js/3.6eeff0f1.chunk.js.map": "/React-Blog-App/static/js/3.6eeff0f1.chunk.js.map",
     "index.html": "/React-Blog-App/index.html",
-    "static/css/main.58296ba2.chunk.css.map": "/React-Blog-App/static/css/main.58296ba2.chunk.css.map",
+    "static/css/main.8d25366d.chunk.css.map": "/React-Blog-App/static/css/main.8d25366d.chunk.css.map",
     "static/js/2.61950fb7.chunk.js.LICENSE.txt": "/React-Blog-App/static/js/2.61950fb7.chunk.js.LICENSE.txt",
     "static/media/DisplayArticle.css": "/React-Blog-App/static/media/Georgia.5b8bb278.ttf",
     "static/media/downward-arrow.96127461.svg": "/React-Blog-App/static/media/downward-arrow.96127461.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.15dc1b29.js",
     "static/js/2.61950fb7.chunk.js",
-    "static/css/main.58296ba2.chunk.css",
+    "static/css/main.8d25366d.chunk.css",
     "static/js/main.e3a1f068.chunk.js"
   ]
 }
