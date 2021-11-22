@@ -19,7 +19,7 @@ class Main extends Component {
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
           keyword: ["Lake", "Mountains", "Nature"],
           imageURL:
-            "https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80",
+            "https://images.unsplash.com/photo-1504637015875-bbc2f3b341e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
           claps: 22,
           author: "User1",
         },
@@ -32,7 +32,7 @@ class Main extends Component {
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
           keyword: ["Mountains", "Nature"],
           imageURL:
-            "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1174&q=80",
+            " https://images.unsplash.com/photo-1531366936337-7c912a4589a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80 ",
           claps: 56,
           author: "User2",
         },
@@ -45,7 +45,7 @@ class Main extends Component {
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
           keyword: ["Mountains", "Friends", "Nature"],
           imageURL:
-            " https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80 ",
+            "https://images.unsplash.com/photo-1502727051360-3656ce291c5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
           claps: 106,
           author: "User3",
         },
@@ -58,7 +58,7 @@ class Main extends Component {
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
           keyword: ["City", "Europe"],
           imageURL:
-            " https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80 ",
+            "https://images.unsplash.com/photo-1471874708433-acd480424946?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80 ",
 
           claps: 81,
           author: "User4",
@@ -86,8 +86,7 @@ class Main extends Component {
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laboriosam?",
           keyword: ["Aurora", "Nights", "Nature"],
           imageURL:
-            " https://images.unsplash.com/photo-1531366936337-7c912a4589a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80 ",
-
+            " https://images.unsplash.com/photo-1482192505345-5655af888cc4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80 ",
           claps: 291,
           author: "User6",
         },

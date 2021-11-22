@@ -28,7 +28,7 @@ class SigninFrom extends Component {
     });
   };
 
-  validateUser = (e, callBackFn) => {
+  validateUser = (e) => {
     e.preventDefault();
     return new Promise((resolve, reject) => {
       const filteredArr = this.props.propsUsersArr.filter((user) => {
