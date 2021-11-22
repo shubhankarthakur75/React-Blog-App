@@ -15,7 +15,7 @@ class Gallery extends Component {
   render() {
     const randomBlog = this.randomBlogSelector();
     return (
-      <Link to={`/${randomBlog.id}`}>
+      <Link to={`/React-Blog-App/${randomBlog.id}`}>
         <div
           className="gallery"
           style={{

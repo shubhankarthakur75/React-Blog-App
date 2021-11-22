@@ -15,12 +15,12 @@ class UserLogin extends Component {
   render() {
     return (
       <div className="user-login">
-        <Header1 propsDisplayFormFn={this.displayForm} />
+        <Header1 />
         <div className="form-container">
           {this.state.formToBeDisplayed === "login" ? (
-            <LoginForm />
+            <LoginForm propsDisplayFormFn={this.displayForm} />
           ) : (
-            <SigninForm />
+            <SigninForm propsDisplayFormFn={this.displayForm} />
           )}
         </div>
       </div>

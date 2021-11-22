@@ -10,24 +10,6 @@ class Header1 extends Component {
           <div className="logo-container">
             <LogoSmall />
           </div>
-          <div className="header-btn-container">
-            <button
-              className="header-btn"
-              onClick={() => {
-                this.props.propsDisplayFormFn("login");
-              }}
-            >
-              Log In
-            </button>
-            <button
-              className="header-btn"
-              onClick={() => {
-                this.props.propsDisplayFormFn("signin");
-              }}
-            >
-              Sign In
-            </button>
-          </div>
         </div>
       </div>
     );

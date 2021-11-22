@@ -15,7 +15,7 @@ class LoginForm extends Component {
     }
     if (e.target.id === "password") {
       this.setState({ password: e.target.value }, () => {
-        this.state.password.length > 8
+        this.state.password.length >= 8
           ? this.setState({
               error: false,
             })
@@ -28,7 +28,7 @@ class LoginForm extends Component {
   validateUser = (e) => {
     e.preventDefault();
     if (this.state.password.length > 8) {
-      this.props.history.push("/home");
+      this.props.history.push("/React-Blog-App/home");
     }
   };
   render() {
@@ -77,6 +77,19 @@ class LoginForm extends Component {
             <button className="user-login-btn" onClick={this.validateUser}>
               Log In
             </button>
+          </li>
+          <li>
+            <span className="signupText"> Don't have an account?</span>
+            <span>
+              <button
+                className="signupLink"
+                onClick={() => {
+                  this.props.propsDisplayFormFn("signin");
+                }}
+              >
+                Sign-Up
+              </button>
+            </span>
           </li>
         </form>
       </div>

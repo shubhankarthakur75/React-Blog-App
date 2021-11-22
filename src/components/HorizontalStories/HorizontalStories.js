@@ -27,7 +27,7 @@ class HorizontalStories extends Component {
             {blogs.map((blog, index) => {
               return (
                 <div className="story-container" key={index}>
-                  <Link to={`/${blog.id}`}>
+                  <Link to={`/React-Blog-App/${blog.id}`}>
                     <Story
                       propsBlogName={blog.name}
                       propsDescription={blog.description}

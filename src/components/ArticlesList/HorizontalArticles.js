@@ -12,7 +12,7 @@ class HorizontalArticles extends Component {
           {this.props.propsBlogs.map((blog, index) => {
             return (
               <div className="article-container" key={index}>
-                <Link to={`/${blog.id}`}>
+                <Link to={`/React-Blog-App/${blog.id}`}>
                   <VerticalArticle
                     propsBlogName={blog.name}
                     propsDescription={blog.description}

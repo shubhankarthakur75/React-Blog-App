@@ -6,22 +6,22 @@ class Navbar extends Component {
   render() {
     return (
       <div className="navbar">
-        <NavLink exact to="/">
+        <NavLink exact to="/React-Blog-App/home">
           <li>Home</li>
         </NavLink>
-        <NavLink to="/travel">
+        <NavLink to="/React-Blog-App/travel">
           <li>Travel</li>
         </NavLink>
-        <NavLink to="/hollywood">
+        <NavLink to="/React-Blog-App/hollywood">
           <li>Hollywood</li>
         </NavLink>
-        <NavLink to="/technology">
+        <NavLink to="/React-Blog-App/technology">
           <li>Technology</li>
         </NavLink>
-        <NavLink to="/fitness">
+        <NavLink to="/React-Blog-App/fitness">
           <li>Fitness</li>
         </NavLink>
-        <NavLink to="/food">
+        <NavLink to="/React-Blog-App/food">
           <li>Food</li>
         </NavLink>
       </div>

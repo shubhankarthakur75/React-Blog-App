@@ -10,20 +10,3 @@
   width: 20%;
   margin-bottom: 10px;
 }
-.header1 .header-btn-container {
-  width: 20%;
-}
-.header1 .header-btn {
-  width: 100px;
-  height: 35px;
-  background-color: #ffffff;
-  color: #03a87c;
-  border: 1px solid #03a87c;
-  margin: 25px 10px 20px 10px;
-  cursor: pointer;
-}
-
-.header1 .header-btn:hover {
-  color: #ffffff;
-  background-color: #03a87c;
-}

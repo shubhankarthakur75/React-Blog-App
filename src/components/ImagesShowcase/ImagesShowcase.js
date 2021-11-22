@@ -19,7 +19,7 @@ class ImagesShowcase extends Component {
     return (
       <div className="images-showcase">
         <div className="showcase-left-box hover-scale">
-          <Link to={`/${randomBlog1.id}`}>
+          <Link to={`/React-Blog-App/${randomBlog1.id}`}>
             <img
               src={`${randomBlog1.imageURL}`}
               className="showcase-image"
@@ -38,7 +38,7 @@ class ImagesShowcase extends Component {
 
         <div className="showcase-right-box">
           <div className="showcase-right-top-box hover-scale ">
-            <Link to={`/${randomBlog2.id}`}>
+            <Link to={`/React-Blog-App/${randomBlog2.id}`}>
               <img
                 src={`${randomBlog2.imageURL}`}
                 className="showcase-image"
@@ -57,7 +57,7 @@ class ImagesShowcase extends Component {
           </div>
 
           <div className="showcase-right-bottom-box hover-scale">
-            <Link to={`/${randomBlog3.id}`}>
+            <Link to={`/React-Blog-App/${randomBlog3.id}`}>
               <img
                 src={`${randomBlog3.imageURL}`}
                 className="showcase-image"

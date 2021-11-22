@@ -19,7 +19,7 @@ export class AuthorPortfolio extends Component {
             return (
               <div className="article" key={index}>
                 <div className="article-image-container">
-                  <Link to={`/${blog.id}`}>
+                  <Link to={`/React-Blog-App/${blog.id}`}>
                     <img
                       src={`${blog.imageURL}`}
                       className="article-image"

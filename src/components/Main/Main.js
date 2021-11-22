@@ -390,46 +390,46 @@ class Main extends Component {
     return (
       <div>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/React-Blog-App/">
             <UserLogin propsBlogsArr={this.state.blogs.blogsArr}></UserLogin>
           </Route>
-          <Route exact path="/home">
+          <Route exact path="/React-Blog-App/home">
             <Home propsBlogsArr={this.state.blogs.blogsArr} />
           </Route>
-          <Route exact path="/travel">
+          <Route exact path="/React-Blog-App/travel">
             <Category
               propsCategoryName="Travel"
               propsBlogsArr={this.state.blogs.blogsArr}
             />
           </Route>
 
-          <Route exact path="/hollywood">
+          <Route exact path="/React-Blog-App/hollywood">
             <Category
               propsCategoryName="Hollywood"
               propsBlogsArr={this.state.blogs.blogsArr}
             />
           </Route>
 
-          <Route exact path="/technology">
+          <Route exact path="/React-Blog-App/technology">
             <Category
               propsCategoryName="Technology"
               propsBlogsArr={this.state.blogs.blogsArr}
             />
           </Route>
 
-          <Route exact path="/fitness">
+          <Route exact path="/React-Blog-App/fitness">
             <Category
               propsCategoryName="Fitness"
               propsBlogsArr={this.state.blogs.blogsArr}
             />
           </Route>
-          <Route exact path="/food">
+          <Route exact path="/React-Blog-App/food">
             <Category
               propsCategoryName="Food"
               propsBlogsArr={this.state.blogs.blogsArr}
             />
           </Route>
-          <Route exact path="/:id">
+          <Route exact path="/React-Blog-App/:id">
             <ReadArticle
               propsBlogsArr={this.state.blogs.blogsArr}
               propsHandleClaps={this.handleClaps}

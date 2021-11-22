@@ -29,7 +29,7 @@ class SigninFrom extends Component {
   registerUser = (e) => {
     e.preventDefault();
     if (this.state.password === this.state.passwordCopy) {
-      this.props.history.push("/");
+      this.props.history.push("/React-Blog-App/");
       this.setState({ passwordMismatchedError: false });
       this.setState({ successfulLoginMessage: true });
     } else {
@@ -42,7 +42,7 @@ class SigninFrom extends Component {
     return (
       <div className="signin-form">
         <form action="">
-          <h1 className="form-title">Sign-In</h1>
+          <h1 className="form-title">Sign-up</h1>
           <li>
             <input
               type="text"
@@ -113,6 +113,19 @@ class SigninFrom extends Component {
             <button className="user-login-btn" onClick={this.registerUser}>
               Sign In
             </button>
+          </li>
+          <li>
+            <span className="loginText">Already have an account?</span>
+            <span>
+              <button
+                className="loginLink"
+                onClick={() => {
+                  this.props.propsDisplayFormFn("login");
+                }}
+              >
+                Log-in
+              </button>
+            </span>
           </li>
         </form>
       </div>

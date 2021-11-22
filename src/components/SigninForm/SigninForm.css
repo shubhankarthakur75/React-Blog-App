@@ -1,8 +1,8 @@
 .signin-form {
   width: 40%;
-  height: 21vw;
   border: 2px solid #03a87c;
   border-radius: 10px;
+  box-shadow: 5px 5px 10px #c9d6d3;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -58,4 +58,146 @@
 .signin-form .user-login-btn:hover {
   background-color: #03a87c;
   color: #ffffff;
+}
+
+.signin-form .loginText {
+  font-size: 14px;
+  /* color: #03a87c; */
+  color: #a2a2a2;
+}
+.signin-form .loginLink {
+  border: none;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  color: #19456b;
+}
+
+/* Responsive LoginForm */
+/* for screen-size(800-1200) */
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .signin-form {
+    width: 50%;
+    padding: 10px;
+  }
+  .signin-form li {
+    margin: 20px;
+  }
+  .signin-form input {
+    height: 37px;
+    width: 70%;
+  }
+  .signin-form .error {
+    height: 37px;
+    width: 70%;
+  }
+
+  .signin-form .user-login-btn {
+    height: 28px;
+    width: 70px;
+  }
+}
+
+/* for screen-size(600-800) */
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .signin-form {
+    width: 60%;
+    padding: 10px;
+  }
+  .signin-form li {
+    margin: 18px;
+  }
+  .signin-form .form-title {
+    font-size: 28px;
+  }
+  .signin-form input {
+    height: 37px;
+    width: 70%;
+  }
+  .signin-form .error {
+    height: 37px;
+    width: 70%;
+  }
+
+  .signin-form .user-login-btn {
+    height: 28px;
+    width: 70px;
+  }
+  .signin-form .loginText {
+    font-size: 13px;
+  }
+  .signin-form .loginLink {
+    font-size: 13px;
+  }
+}
+
+/* for screen-size(470-600) */
+@media screen and (min-width: 470px) and (max-width: 600px) {
+  .signin-form {
+    width: 70%;
+    padding: 10px;
+  }
+  .signin-form li {
+    margin: 17px;
+  }
+  .signin-form .form-title {
+    font-size: 26px;
+  }
+  .signin-form input {
+    height: 35px;
+    width: 75%;
+  }
+  .signin-form .error {
+    height: 37px;
+    width: 75%;
+  }
+
+  .signin-form .user-login-btn {
+    height: 26px;
+    width: 65px;
+  }
+  .signin-form .loginText {
+    font-size: 13px;
+  }
+  .signin-form .loginLink {
+    font-size: 13px;
+  }
+}
+
+/* for screen-size(350-470) */
+@media screen and (min-width: 350px) and (max-width: 470px) {
+  .signin-form {
+    width: 80%;
+    padding: 10px 0px;
+  }
+  .signin-form li {
+    margin: 12px;
+  }
+  .signin-form .form-title {
+    font-size: 25px;
+  }
+  .signin-form input {
+    height: 35px;
+    width: 95%;
+  }
+  .signin-form .error {
+    height: 35px;
+    width: 95%;
+  }
+  .signin-form .error-message {
+    font-size: 11px;
+    text-align: left;
+  }
+
+  .signin-form .user-login-btn {
+    height: 28px;
+    width: 70px;
+  }
+  .signin-form .loginText {
+    font-size: 11px;
+  }
+  .signin-form .loginLink {
+    font-size: 11px;
+  }
 }

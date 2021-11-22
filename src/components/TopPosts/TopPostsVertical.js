@@ -19,7 +19,7 @@ export class TopPostsVertical extends Component {
           {topPostsArr.map((post, index) => {
             return (
               <div className="post-container" key={index}>
-                <Link to={`/${post.id}`}>
+                <Link to={`/React-Blog-App/${post.id}`}>
                   <HorizontalPost propsPost={post} propsRank={index + 1} />
                 </Link>
               </div>
