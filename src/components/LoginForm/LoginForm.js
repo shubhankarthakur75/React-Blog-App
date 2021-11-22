@@ -27,7 +27,8 @@ class LoginForm extends Component {
   };
   validateUser = (e) => {
     e.preventDefault();
-    if (this.state.password.length > 8) {
+    if (this.state.password.length >= 8) {
+      console.log("Validated");
       this.props.history.push("/React-Blog-App/home");
     }
   };
