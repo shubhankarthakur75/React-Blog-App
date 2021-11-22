@@ -28,29 +28,6 @@ class SigninFrom extends Component {
     });
   };
 
-  // validateUser = (e, callBackFn) => {
-  //   e.preventDefault();
-
-  //   const filteredArr = this.props.propsUsersArr.filter((user) => {
-  //     return user.username === this.state.username;
-  //   });
-  //   if (filteredArr.length === 0) {
-  //     this.setState({ duplicateUserError: false });
-  //   } else {
-  //     this.setState({ duplicateUserError: true }, () => {
-  //       console.log("this.state.duplicateError", this.state.duplicateUserError);
-  //       callBackFn();
-  //     });
-  //   }
-
-  //   if (this.state.password === this.state.passwordCopy) {
-  //     this.setState({ passwordMismatchedError: false }, () => callBackFn());
-  //   } else {
-  //     this.setState({ passwordMismatchedError: true }, () => callBackFn());
-  //     this.setState({ successfulLoginMessage: false });
-  //   }
-  // };
-
   validateUser = (e, callBackFn) => {
     e.preventDefault();
     return new Promise((resolve, reject) => {
@@ -88,26 +65,6 @@ class SigninFrom extends Component {
       this.setState({ username: "", password: "", passwordCopy: "" });
     }
   };
-
-  // registerUser = (e) => {
-  //   e.preventDefault();
-  //   if (this.state.password === this.state.passwordCopy) {
-  //     this.setState({ passwordMismatchedError: false });
-  //     this.setState({ successfulLoginMessage: true });
-  //     // let id = this.idGenerator();
-  //     // this.props.propsRegisterUserFn(
-  //     //   id,
-  //     //   this.state.username,
-  //     //   this.state.password
-  //     // );
-  //     this.validateUser(this.state.username, this.state.password);
-  //     this.setState({ username: "", password: "", passwordCopy: "" });
-  //   } else {
-  //     this.setState({ passwordMismatchedError: true });
-  //     this.setState({ successfulLoginMessage: false });
-  //     this.setState({ duplicateUserError: false });
-  //   }
-  // };
 
   idGenerator = () => {
     let d = new Date();
