@@ -25,6 +25,7 @@ class UserLogin extends Component {
           ) : (
             <SigninForm
               propsDisplayFormFn={this.displayForm}
+              propsUsersArr={this.props.propsUsersArr}
               propsRegisterUserFn={this.props.propsRegisterUserFn}
             />
           )}

@@ -10,10 +10,12 @@ class SigninFrom extends Component {
     passwordLengthError: false,
     passwordMismatchedError: false,
     successfulLoginMessage: false,
+    duplicateUserError: false,
   };
 
   handleChange = (e) => {
     this.setState({ [e.target.id]: e.target.value }, () => {
+      this.setState({ successfulLoginMessage: false });
       if (e.target.id === "password") {
         this.state.password.length >= 8
           ? this.setState({
@@ -26,23 +28,86 @@ class SigninFrom extends Component {
     });
   };
 
-  registerUser = (e) => {
+  // validateUser = (e, callBackFn) => {
+  //   e.preventDefault();
+
+  //   const filteredArr = this.props.propsUsersArr.filter((user) => {
+  //     return user.username === this.state.username;
+  //   });
+  //   if (filteredArr.length === 0) {
+  //     this.setState({ duplicateUserError: false });
+  //   } else {
+  //     this.setState({ duplicateUserError: true }, () => {
+  //       console.log("this.state.duplicateError", this.state.duplicateUserError);
+  //       callBackFn();
+  //     });
+  //   }
+
+  //   if (this.state.password === this.state.passwordCopy) {
+  //     this.setState({ passwordMismatchedError: false }, () => callBackFn());
+  //   } else {
+  //     this.setState({ passwordMismatchedError: true }, () => callBackFn());
+  //     this.setState({ successfulLoginMessage: false });
+  //   }
+  // };
+
+  validateUser = (e, callBackFn) => {
     e.preventDefault();
-    if (this.state.password === this.state.passwordCopy) {
-      this.setState({ passwordMismatchedError: false });
-      this.setState({ successfulLoginMessage: true });
+    return new Promise((resolve, reject) => {
+      const filteredArr = this.props.propsUsersArr.filter((user) => {
+        return user.username === this.state.username;
+      });
+
+      if (filteredArr.length === 0) {
+        this.setState({ duplicateUserError: false });
+      } else {
+        this.setState({ duplicateUserError: true });
+      }
+
+      if (this.state.password === this.state.passwordCopy) {
+        this.setState({ passwordMismatchedError: false });
+      } else {
+        this.setState({ passwordMismatchedError: true });
+      }
+      resolve();
+    });
+  };
+
+  registerUser = () => {
+    if (
+      this.state.passwordMismatchedError === false &&
+      this.state.duplicateUserError === false
+    ) {
       let id = this.idGenerator();
       this.props.propsRegisterUserFn(
         id,
         this.state.username,
         this.state.password
       );
+      this.setState({ successfulLoginMessage: true });
       this.setState({ username: "", password: "", passwordCopy: "" });
-    } else {
-      this.setState({ passwordMismatchedError: true });
-      this.setState({ successfulLoginMessage: false });
     }
   };
+
+  // registerUser = (e) => {
+  //   e.preventDefault();
+  //   if (this.state.password === this.state.passwordCopy) {
+  //     this.setState({ passwordMismatchedError: false });
+  //     this.setState({ successfulLoginMessage: true });
+  //     // let id = this.idGenerator();
+  //     // this.props.propsRegisterUserFn(
+  //     //   id,
+  //     //   this.state.username,
+  //     //   this.state.password
+  //     // );
+  //     this.validateUser(this.state.username, this.state.password);
+  //     this.setState({ username: "", password: "", passwordCopy: "" });
+  //   } else {
+  //     this.setState({ passwordMismatchedError: true });
+  //     this.setState({ successfulLoginMessage: false });
+  //     this.setState({ duplicateUserError: false });
+  //   }
+  // };
 
   idGenerator = () => {
     let d = new Date();
@@ -62,6 +127,11 @@ class SigninFrom extends Component {
               value={this.state.username}
               onChange={(e) => this.handleChange(e)}
             />
+            {this.state.duplicateUserError ? (
+              <p className="error-message">
+                This username has been already used
+              </p>
+            ) : null}
           </li>
 
           {this.state.passwordLengthError ? (
@@ -113,7 +183,10 @@ class SigninFrom extends Component {
           </li>
 
           <li>
-            <button className="user-login-btn" onClick={this.registerUser}>
+            <button
+              className="user-login-btn"
+              onClick={(e) => this.validateUser(e).then(this.registerUser)}
+            >
               Sign In
             </button>
           </li>
