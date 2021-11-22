@@ -20,17 +20,18 @@
 
 .signin-form li {
   list-style-type: none;
-  margin: 20px;
+  margin: 20px auto;
+  width: 65%;
 }
 .signin-form input {
   height: 40px;
-  width: 55%;
+  width: 100%;
   border: 2px solid #a2a2a2;
   border-radius: 5px;
 }
 .signin-form .error {
   height: 40px;
-  width: 55%;
+  width: 100%;
   border: 2px solid red;
   border-radius: 5px;
 }
@@ -40,11 +41,13 @@
 .signin-form .error-message {
   font-size: 12px;
   color: red;
+  text-align: left;
 }
 
 .signin-form .success-message {
   font-size: 12px;
   color: green;
+  text-align: left;
 }
 .signin-form .user-login-btn {
   height: 30px;
@@ -82,15 +85,16 @@
     padding: 10px;
   }
   .signin-form li {
-    margin: 20px;
+    margin: 20px auto;
+    width: 70%;
   }
   .signin-form input {
     height: 37px;
-    width: 70%;
+    width: 100%;
   }
   .signin-form .error {
     height: 37px;
-    width: 70%;
+    width: 100%;
   }
 
   .signin-form .user-login-btn {
@@ -106,18 +110,19 @@
     padding: 10px;
   }
   .signin-form li {
-    margin: 18px;
+    margin: 18px auto;
+    width: 70%;
   }
   .signin-form .form-title {
     font-size: 28px;
   }
   .signin-form input {
     height: 37px;
-    width: 70%;
+    width: 100%;
   }
   .signin-form .error {
     height: 37px;
-    width: 70%;
+    width: 100%;
   }
 
   .signin-form .user-login-btn {
@@ -139,18 +144,19 @@
     padding: 10px;
   }
   .signin-form li {
-    margin: 17px;
+    margin: 17px auto;
+    width: 80%;
   }
   .signin-form .form-title {
     font-size: 26px;
   }
   .signin-form input {
     height: 35px;
-    width: 75%;
+    width: 100%;
   }
   .signin-form .error {
     height: 37px;
-    width: 75%;
+    width: 100%;
   }
 
   .signin-form .user-login-btn {
@@ -172,22 +178,22 @@
     padding: 10px 0px;
   }
   .signin-form li {
-    margin: 12px;
+    margin: 12px auto;
+    width: 95%;
   }
   .signin-form .form-title {
     font-size: 25px;
   }
   .signin-form input {
     height: 35px;
-    width: 95%;
+    width: 100%;
   }
   .signin-form .error {
     height: 35px;
-    width: 95%;
+    width: 100%;
   }
   .signin-form .error-message {
     font-size: 11px;
-    text-align: left;
   }
 
   .signin-form .user-login-btn {

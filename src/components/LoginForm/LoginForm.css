@@ -20,17 +20,18 @@
 
 .login-form li {
   list-style-type: none;
-  margin: 25px;
+  width: 55%;
+  margin: 25px auto;
 }
 .login-form input {
   height: 40px;
-  width: 55%;
+  width: 100%;
   border: 2px solid #a2a2a2;
   border-radius: 5px;
 }
 .login-form .error {
   height: 40px;
-  width: 55%;
+  width: 100%;
   border: 2px solid red;
   border-radius: 5px;
 }
@@ -40,6 +41,7 @@
 .login-form .error-message {
   font-size: 12px;
   color: red;
+  text-align: left;
 }
 
 .login-form .user-login-btn {
@@ -77,15 +79,16 @@
     padding: 10px;
   }
   .login-form li {
-    margin: 20px;
+    margin: 20px auto;
+    width: 70%;
   }
   .login-form input {
     height: 37px;
-    width: 70%;
+    width: 100%;
   }
   .login-form .error {
     height: 37px;
-    width: 70%;
+    width: 100%;
   }
 
   .login-form .user-login-btn {
@@ -101,18 +104,19 @@
     padding: 10px;
   }
   .login-form li {
-    margin: 18px;
+    margin: 18px auto;
+    width: 70%;
   }
   .login-form .form-title {
     font-size: 28px;
   }
   .login-form input {
     height: 37px;
-    width: 70%;
+    width: 100%;
   }
   .login-form .error {
     height: 37px;
-    width: 70%;
+    width: 100%;
   }
 
   .login-form .user-login-btn {
@@ -134,18 +138,19 @@
     padding: 10px;
   }
   .login-form li {
-    margin: 17px;
+    margin: 17px auto;
+    width: 75%;
   }
   .login-form .form-title {
     font-size: 26px;
   }
   .login-form input {
     height: 35px;
-    width: 75%;
+    width: 100%;
   }
   .login-form .error {
     height: 37px;
-    width: 75%;
+    width: 100%;
   }
 
   .login-form .user-login-btn {
@@ -163,22 +168,23 @@
 /* for screen-size(350-470) */
 @media screen and (min-width: 350px) and (max-width: 470px) {
   .login-form {
-    width: 80%;
-    padding: 10px 0px;
+    width: 90%;
+    padding: 20px 10px;
   }
   .login-form li {
-    margin: 12px;
+    margin: 12px auto;
+    width: 95%;
   }
   .login-form .form-title {
     font-size: 25px;
   }
   .login-form input {
     height: 35px;
-    width: 95%;
+    width: 100%;
   }
   .login-form .error {
     height: 35px;
-    width: 95%;
+    width: 100%;
   }
   .login-form .error-message {
     font-size: 11px;
