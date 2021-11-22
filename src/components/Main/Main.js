@@ -374,6 +374,7 @@ class Main extends Component {
         },
       ],
     },
+    users: { usersArr: [] },
   };
 
   handleClaps = (id) => {
@@ -386,12 +387,22 @@ class Main extends Component {
     this.setState({ blogsArr: newBlogsArr });
   };
 
+  registerUser = (id, username, password) => {
+    const newUserObj = { id, username, password };
+    const stateCopy = { ...this.state };
+    stateCopy.users.usersArr.push(newUserObj);
+    this.setState(stateCopy);
+  };
+
   render() {
     return (
       <div>
         <Switch>
           <Route exact path="/React-Blog-App/">
-            <UserLogin propsBlogsArr={this.state.blogs.blogsArr}></UserLogin>
+            <UserLogin
+              propsUsersArr={this.state.users.usersArr}
+              propsRegisterUserFn={this.registerUser}
+            ></UserLogin>
           </Route>
           <Route exact path="/React-Blog-App/home">
             <Home propsBlogsArr={this.state.blogs.blogsArr} />

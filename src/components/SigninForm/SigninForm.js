@@ -29,13 +29,24 @@ class SigninFrom extends Component {
   registerUser = (e) => {
     e.preventDefault();
     if (this.state.password === this.state.passwordCopy) {
-      this.props.history.push("/React-Blog-App/");
       this.setState({ passwordMismatchedError: false });
       this.setState({ successfulLoginMessage: true });
+      let id = this.idGenerator();
+      this.props.propsRegisterUserFn(
+        id,
+        this.state.username,
+        this.state.password
+      );
+      this.setState({ username: "", password: "", passwordCopy: "" });
     } else {
       this.setState({ passwordMismatchedError: true });
       this.setState({ successfulLoginMessage: false });
     }
+  };
+
+  idGenerator = () => {
+    let d = new Date();
+    return d.getTime();
   };
 
   render() {
@@ -99,14 +110,6 @@ class SigninFrom extends Component {
                 Succesfully Registered! Please Login agian
               </p>
             ) : null}
-
-            {/* {this.state.passwordMismatchedError === true ? (
-              <p className="error-message">Please re-enter password</p>
-            ) : this.state.passwordMismatchedError !== "" ? (
-              <p className="success-message">
-                Succesfully Registered! Please Login agian
-              </p>
-            ) : null} */}
           </li>
 
           <li>
