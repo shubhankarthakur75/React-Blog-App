@@ -174,11 +174,11 @@
 /* for screen-size(350-470) */
 @media screen and (min-width: 350px) and (max-width: 470px) {
   .signin-form {
-    width: 80%;
-    padding: 10px 0px;
+    width: 90%;
+    padding: 15px;
   }
   .signin-form li {
-    margin: 12px auto;
+    margin: 15px auto;
     width: 95%;
   }
   .signin-form .form-title {
